@@ -58,7 +58,7 @@ private:
 	map<int, int> booking;	// a map from time stamp to number of bookings
 	int max_events;
 };
-
+/*
 int main() {
 	MyCalendarThree cal;
 	cout<<cal.book(10, 20)<<endl; // returns 1
@@ -71,7 +71,7 @@ int main() {
 	cin.get();
 	return 0;
 }
-
+*/
 /**
  * Your MyCalendarThree object will be instantiated and called as such:
  * MyCalendarThree obj = new MyCalendarThree();

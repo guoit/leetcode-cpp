@@ -27,5 +27,8 @@
     <ClCompile Include="0715RangeModule.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="0324WiggleSortII.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

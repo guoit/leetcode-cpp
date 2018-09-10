@@ -26,6 +26,7 @@ In calls to MyCalendar.book(start, end), start and end are integers in the range
 */
 #include <iostream>
 #include <set>
+#include <map>
 #include <algorithm>
 
 using namespace std;
@@ -43,9 +44,9 @@ public:
 
 		for (auto t : s1) {
 			if (t.second <= start || t.first >= end) continue;
-			else s2.insert(pair<int, int>(max(t.first, start), min(t.second, end)));			
+			else s2.insert(make_pair(max(t.first, start), min(t.second, end)));			
 		}
-		s1.insert(pair<int, int>(start, end));
+		s1.insert(make_pair(start, end));
 		return true;
 	}
 
@@ -53,9 +54,36 @@ private:
 	set<pair<int, int>> s1, s2;
 };
 
+// another solution from http://www.cnblogs.com/grandyang/p/7968035.html
+class MyCalendarII_Map {
+public:
+	MyCalendarII_Map() {}
+
+	bool book(int start, int end) {
+		++booking[start];
+		--booking[end];
+
+		int cnt = 0;
+		for (auto b : booking) {
+			cnt += b.second;
+			if (cnt == 3) {
+				--booking[start];
+				++booking[end];
+				return false;
+			}
+		}
+
+		return true;
+	}
+
+private:
+	map<int, int> booking;
+};
+
+/*
 int main()
 {
-	MyCalendarII cal;
+	MyCalendarII_Map cal;
 	cout<<cal.book(10, 20)<<endl; // returns true
 	cout << cal.book(50, 60)<<endl; // returns true
 	cout << cal.book(10, 40)<<endl; // returns true
@@ -66,3 +94,4 @@ int main()
 	cin.get();
 	return 0;
 }
+*/

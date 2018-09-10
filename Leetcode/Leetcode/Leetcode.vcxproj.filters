@@ -21,5 +21,11 @@
     <ClCompile Include="0731MyCalendarII.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="0732MyCalendarIII.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0715RangeModule.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

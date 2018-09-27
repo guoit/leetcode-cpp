@@ -30,6 +30,9 @@
     <ClCompile Include="0324WiggleSortII.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="0741CherryPickup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="0034SearchForARange.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>

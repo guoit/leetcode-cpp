@@ -115,6 +115,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="0034SearchForARange.cpp" />
     <ClCompile Include="0324WiggleSortII.cpp" />
     <ClCompile Include="0715RangeModule.cpp" />
     <ClCompile Include="0729MyCalendarI.cpp" />

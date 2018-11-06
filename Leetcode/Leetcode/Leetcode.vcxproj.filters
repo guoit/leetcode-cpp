@@ -36,5 +36,8 @@
     <ClCompile Include="0034SearchForARange.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="0855ExamRoom.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

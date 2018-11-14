@@ -123,6 +123,7 @@
     <ClCompile Include="0732MyCalendarIII.cpp" />
     <ClCompile Include="0741CherryPickup.cpp" />
     <ClCompile Include="0855ExamRoom.cpp" />
+    <ClCompile Include="0870AdvantageShuffle.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

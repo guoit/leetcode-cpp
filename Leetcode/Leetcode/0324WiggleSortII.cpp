@@ -39,15 +39,15 @@ public:
 	}
 };
 
-int main() {
-	vector<int> nums = { 1, 5, 1, 1, 6, 4 };
-	Solution obj;
-	obj.WiggleSort(nums);
-	for (auto num : nums) {
-		cout << num << ' ';
-	}
-	cout << endl;
-	cin.get();
-
-	return 0;
-}
+//int main() {
+//	vector<int> nums = { 1, 5, 1, 1, 6, 4 };
+//	Solution obj;
+//	obj.WiggleSort(nums);
+//	for (auto num : nums) {
+//		cout << num << ' ';
+//	}
+//	cout << endl;
+//	cin.get();
+//
+//	return 0;
+//}

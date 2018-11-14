@@ -33,7 +33,9 @@ public:
 		}
 		else
 		{
-			return { bounds.first - nums.begin(), bounds.second - nums.begin() - 1 };
+			//return { bounds.first - nums.begin(), bounds.second - nums.begin() - 1 };
+			//return { distance(nums.begin(), bounds.first), distance(nums.begin(), bounds.second) - 1 };
+			return { -1, -1 };
 		}
 	}
 };

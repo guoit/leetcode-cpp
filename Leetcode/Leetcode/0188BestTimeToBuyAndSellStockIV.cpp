@@ -1,14 +1,6 @@
 /*
-188. Best Time to Buy and Sell Stock IV
-Hard
+188 Best Time to Buy and Sell Stock IV
 
-591
-
-46
-
-Favorite
-
-Share
 Say you have an array for which the ith element is the price of a given stock on day i.
 
 Design an algorithm to find the maximum profit. You may complete at most k transactions.
@@ -34,6 +26,8 @@ using namespace std;
 class Solution {
 public:
 	int maxProfit(int k, vector<int>& prices) {
-
+		int m = 100;
+		int n = 100;
+		vector<vector<int>> dp(m, vector<int>(n, 0));
 	}
 };

@@ -45,3 +45,11 @@ static void myprint(map<T1, T2>& M) {
 	}
 	cout << "}" << endl;
 }
+
+/* TreeNode definition */
+struct TreeNode {
+	int val;
+	TreeNode *left;
+	TreeNode *right;
+	TreeNode(int x) : val(x), left(NULL), right(NULL) {}	
+};

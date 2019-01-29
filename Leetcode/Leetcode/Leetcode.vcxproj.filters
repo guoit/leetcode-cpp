@@ -42,5 +42,22 @@
     <ClCompile Include="0870AdvantageShuffle.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="0179LargestNumber.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0187RepeatedDNASequences.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0188BestTimeToBuyAndSellStockIV.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0094BinaryTreeInorderTraversal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="utilities.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

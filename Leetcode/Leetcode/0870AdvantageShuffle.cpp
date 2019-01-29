@@ -42,7 +42,7 @@ public:
 				remains[num] = 1;
 			}
 		}
-		myprint(remains);
+		//myprint(remains);
 
 		vector<int> res;
 		for (int num : B) {

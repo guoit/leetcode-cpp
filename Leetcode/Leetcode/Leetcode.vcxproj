@@ -116,6 +116,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="0034SearchForARange.cpp" />
+    <ClCompile Include="0094BinaryTreeInorderTraversal.cpp" />
+    <ClCompile Include="0179LargestNumber.cpp" />
+    <ClCompile Include="0187RepeatedDNASequences.cpp" />
+    <ClCompile Include="0188BestTimeToBuyAndSellStockIV.cpp" />
     <ClCompile Include="0324WiggleSortII.cpp" />
     <ClCompile Include="0715RangeModule.cpp" />
     <ClCompile Include="0729MyCalendarI.cpp" />
@@ -124,6 +128,9 @@
     <ClCompile Include="0741CherryPickup.cpp" />
     <ClCompile Include="0855ExamRoom.cpp" />
     <ClCompile Include="0870AdvantageShuffle.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="utilities.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

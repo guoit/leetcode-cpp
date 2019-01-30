@@ -14,12 +14,49 @@ Output: "9534330"
 Note: The result may be very large, so you need to return a string instead of an integer.
 */
 # include <vector>
+# include <string>
+# include <algorithm>
+# include <numeric>
+# include <iostream>
 
 using namespace std;
 
 class Solution {
 public:
-	string largestNumber(vector<int>& nums) {
+	static bool compare(int a, int b) {
+		string a_str = to_string(a);
+		string b_str = to_string(b);
 
+		return a_str + b_str > b_str + a_str;
+	}
+
+	string largestNumber(vector<int>& nums) {
+		sort(nums.begin(), nums.end(), compare);
+		
+		string res;
+		// use for loop to concatenate numbers
+		/*
+		for (int a : nums) {
+			res += to_string(a);
+		}
+		*/
+		// example of using std::accumulate function in numeric library
+		auto func_concatenate = [](string& accumulator, int a)->string& {
+			accumulator += to_string(a);
+			return accumulator;
+		};
+		
+		res = accumulate(nums.begin(), nums.end(), res, func_concatenate);
+
+		return res;
 	}
 };
+
+int main() {
+	Solution obj;
+	vector<int> nums = { 3,30,34,5,9 };
+	cout << obj.largestNumber(nums) << endl;
+	cin.get();
+
+	return 0;
+}

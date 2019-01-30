@@ -32,7 +32,7 @@ public:
 		if (n < 1) {
 			return 0;
 		}
-		vector<vector<int>> dp(k+1, vector<int>(n, 0));	// dp[i][j] is the max profit on ith transaction, up to jth day
+		vector<vector<int>> dp(k+1, vector<int>(n, 0));	// dp[i][j] is the max profit up to ith transaction, on jth day
 
 		for (int i = 1; i <= k; ++i) {
 			int minCost = prices[0];
@@ -46,12 +46,12 @@ public:
 	}
 };
 
-int main() {
-	Solution obj;
-	vector<int> prices = { 3, 2, 6, 5, 0, 3 };
-	int k = 2;
-	cout<<obj.maxProfit(k, prices)<<"\n";
-	cin.get();
-	return 0;
-
-}
+//int main() {
+//	Solution obj;
+//	vector<int> prices = { 3, 2, 6, 5, 0, 3 };
+//	int k = 2;
+//	cout<<obj.maxProfit(k, prices)<<"\n";
+//	cin.get();
+//	return 0;
+//
+//}

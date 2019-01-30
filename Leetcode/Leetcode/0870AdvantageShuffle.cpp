@@ -60,14 +60,14 @@ public:
 	}
 };
 
-int main() {
-	Solution obj;
-	vector<int> A{ 12,24,8,32 };
-	vector<int> B{ 13,25,32,11 };
-	
-	vector<int> C = obj.advantageCount(A, B);
-	myprint(C);	
-
-	cin.get();
-	return 0;
-}
+//int main() {
+//	Solution obj;
+//	vector<int> A{ 12,24,8,32 };
+//	vector<int> B{ 13,25,32,11 };
+//	
+//	vector<int> C = obj.advantageCount(A, B);
+//	myprint(C);	
+//
+//	cin.get();
+//	return 0;
+//}

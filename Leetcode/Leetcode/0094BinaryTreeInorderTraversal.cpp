@@ -67,6 +67,8 @@ public:
 				it = it->left;
 			}
 		}
+
+		return res;
 	}
 };
 

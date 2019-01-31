@@ -31,6 +31,10 @@ public:
 	}
 
 	string largestNumber(vector<int>& nums) {
+		if (all_of(nums.begin(), nums.end(), [](int i) {return i == 0; })) {
+			return "0";
+		}// bug fixed: forget the cases when nums's elements are all 0
+
 		sort(nums.begin(), nums.end(), compare);
 		
 		string res;
@@ -54,7 +58,8 @@ public:
 
 int main() {
 	Solution obj;
-	vector<int> nums = { 3,30,34,5,9 };
+	//vector<int> nums = { 3,30,34,5,9 };
+	vector<int> nums(10, 0);
 	cout << obj.largestNumber(nums) << endl;
 	cin.get();
 

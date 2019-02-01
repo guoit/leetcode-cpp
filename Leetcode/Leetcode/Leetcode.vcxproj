@@ -117,9 +117,12 @@
   <ItemGroup>
     <ClCompile Include="0034SearchForARange.cpp" />
     <ClCompile Include="0094BinaryTreeInorderTraversal.cpp" />
+    <ClCompile Include="0146LRUCache.cpp" />
     <ClCompile Include="0179LargestNumber.cpp" />
     <ClCompile Include="0187RepeatedDNASequences.cpp" />
     <ClCompile Include="0188BestTimeToBuyAndSellStockIV.cpp" />
+    <ClCompile Include="0200NumberOfIslands.cpp" />
+    <ClCompile Include="0206ReverseLinkedList.cpp" />
     <ClCompile Include="0324WiggleSortII.cpp" />
     <ClCompile Include="0715RangeModule.cpp" />
     <ClCompile Include="0729MyCalendarI.cpp" />

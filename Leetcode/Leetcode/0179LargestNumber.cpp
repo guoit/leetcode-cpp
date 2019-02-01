@@ -56,12 +56,12 @@ public:
 	}
 };
 
-int main() {
-	Solution obj;
-	//vector<int> nums = { 3,30,34,5,9 };
-	vector<int> nums(10, 0);
-	cout << obj.largestNumber(nums) << endl;
-	cin.get();
-
-	return 0;
-}
+//int main() {
+//	Solution obj;
+//	//vector<int> nums = { 3,30,34,5,9 };
+//	vector<int> nums(10, 0);
+//	cout << obj.largestNumber(nums) << endl;
+//	cin.get();
+//
+//	return 0;
+//}

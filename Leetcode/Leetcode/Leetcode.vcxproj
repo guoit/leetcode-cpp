@@ -123,6 +123,8 @@
     <ClCompile Include="0188BestTimeToBuyAndSellStockIV.cpp" />
     <ClCompile Include="0200NumberOfIslands.cpp" />
     <ClCompile Include="0206ReverseLinkedList.cpp" />
+    <ClCompile Include="0207CourseSchedule.cpp" />
+    <ClCompile Include="0210CourseScheduleII.cpp" />
     <ClCompile Include="0324WiggleSortII.cpp" />
     <ClCompile Include="0715RangeModule.cpp" />
     <ClCompile Include="0729MyCalendarI.cpp" />

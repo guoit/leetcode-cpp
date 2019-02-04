@@ -63,6 +63,12 @@
     <ClCompile Include="0146LRUCache.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="0207CourseSchedule.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0210CourseScheduleII.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="utilities.h">

@@ -69,6 +69,12 @@
     <ClCompile Include="0210CourseScheduleII.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="0220ContainsDuplicateIII.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0218TheSkylineProblem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="utilities.h">

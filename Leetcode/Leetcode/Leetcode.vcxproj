@@ -125,6 +125,8 @@
     <ClCompile Include="0206ReverseLinkedList.cpp" />
     <ClCompile Include="0207CourseSchedule.cpp" />
     <ClCompile Include="0210CourseScheduleII.cpp" />
+    <ClCompile Include="0218TheSkylineProblem.cpp" />
+    <ClCompile Include="0220ContainsDuplicateIII.cpp" />
     <ClCompile Include="0324WiggleSortII.cpp" />
     <ClCompile Include="0715RangeModule.cpp" />
     <ClCompile Include="0729MyCalendarI.cpp" />

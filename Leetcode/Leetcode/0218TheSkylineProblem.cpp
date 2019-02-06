@@ -1,14 +1,6 @@
 /*
-218. The Skyline Problem
-Hard
+218 The Skyline Problem
 
-980
-
-52
-
-Favorite
-
-Share
 A city's skyline is the outer contour of the silhouette formed by all the buildings in that city when viewed from a distance. Now suppose you are given the locations and height of all the buildings as shown on a cityscape photo (Figure A), write a program to output the skyline formed by these buildings collectively (Figure B).
 
 Buildings  Skyline Contour
@@ -22,16 +14,34 @@ For instance, the skyline in Figure B should be represented as:[ [2 10], [3 15],
 
 Notes:
 
-The number of buildings in any input list is guaranteed to be in the range [0, 10000].
+The n 
+c/ r of buildings in any input list is guaranteed to be in the range [0, 10000].
 The input list is already sorted in ascending order by the left x position Li.
 The output list must be sorted by the x position.
 There must be no consecutive horizontal lines of equal height in the output skyline. For instance, [...[2 3], [4 5], [7 5], [11 5], [12 7]...] is not acceptable; the three lines of height 5 should be merged into one in the final output as such: [...[2 3], [4 5], [12 7], ...]
 */
 #include <vector>
+#include <set>
+#include <algorithm>
+
 using namespace std;
 class Solution {
 public:
 	vector<pair<int, int>> getSkyline(vector<vector<int>>& buildings) {
+		vector<pair<int, int>> b, res;
+		multiset<int> h;	// stores the height of the buildings
 
+		for (auto &a : buildings) {
+			b.push_back(make_pair(a[0], -a[2]));	// use minus sign to mark the increasing edge, so it always on the left of the decreasing edge
+			b.push_back(make_pair(a[1], a[2]));
+		}
+
+		sort(b.begin(), b.end());
+		h.insert(0);	// initially put 0 at the multiset, because no building's height <= 0, so 0 will always be in multiset h
+
+		int pre = 0, cur = 0;
+		for (auto &a : b) {
+
+		}
 	}
 };

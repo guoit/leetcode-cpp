@@ -63,14 +63,14 @@ public:
 	}
 };
 
-int main() {
-	Solution obj;
-	//string s = "1+ (2 + (3 + (4+5)))";
-	//string s = "-1";
-	string s = "100-(-(2-34)+6 -(9))";
-	//string s = "";
-	cout << obj.calculate(s) << endl;
-
-	cin.get();
-	return 0;
-}
+//int main() {
+//	Solution obj;
+//	//string s = "1+ (2 + (3 + (4+5)))";
+//	//string s = "-1";
+//	string s = "100-(-(2-34)+6 -(9))";
+//	//string s = "";
+//	cout << obj.calculate(s) << endl;
+//
+//	cin.get();
+//	return 0;
+//}

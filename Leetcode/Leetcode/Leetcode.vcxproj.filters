@@ -84,6 +84,15 @@
     <ClCompile Include="0819MostCommonWord.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="0227BasicCalculatorII.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0159LongestSubstringWithAtMostTwoDistinctCharacters.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0340LongestSubstringWithAtMostKDistinctCharacters.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="utilities.h">

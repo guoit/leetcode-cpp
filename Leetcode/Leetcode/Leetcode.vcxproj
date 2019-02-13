@@ -119,6 +119,7 @@
     <ClCompile Include="0034SearchForARange.cpp" />
     <ClCompile Include="0094BinaryTreeInorderTraversal.cpp" />
     <ClCompile Include="0146LRUCache.cpp" />
+    <ClCompile Include="0159LongestSubstringWithAtMostTwoDistinctCharacters.cpp" />
     <ClCompile Include="0179LargestNumber.cpp" />
     <ClCompile Include="0187RepeatedDNASequences.cpp" />
     <ClCompile Include="0188BestTimeToBuyAndSellStockIV.cpp" />
@@ -131,6 +132,7 @@
     <ClCompile Include="0224BasicCalculator.cpp" />
     <ClCompile Include="0227BasicCalculatorII.cpp" />
     <ClCompile Include="0324WiggleSortII.cpp" />
+    <ClCompile Include="0340LongestSubstringWithAtMostKDistinctCharacters.cpp" />
     <ClCompile Include="0715RangeModule.cpp" />
     <ClCompile Include="0729MyCalendarI.cpp" />
     <ClCompile Include="0731MyCalendarII.cpp" />

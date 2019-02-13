@@ -32,10 +32,29 @@ Words only consist of letters, never apostrophes or other punctuation symbols.
 */
 #include <string>
 #include <vector>
+#include <unordered_set>
+#include <unordered_map>
+#include <sstream>
 using namespace std;
 
 class Solution {
 public:
 	string mostCommonWord(string paragraph, vector<string>& banned) {
+		unordered_set<string> ban(banned.begin(), banned.end());
+		unordered_map<string, int> cnt;	// count of words
+		int mx = 0;
+
+		for (auto &c : paragraph)	c = isalpha(c) ? tolower(c) : ' ';	// replace non-alpha character with whitespace
+		istringstream iss(paragraph);	// use stream to split words by whitespace
+
+		string t = "", res = "";
+		while (iss >> t) {
+			if (!ban.count(t) && ++cnt[t] > mx) {
+				mx = cnt[t];
+				res = t;
+			}
+		}
+
+		return res;
 	}
 };

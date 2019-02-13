@@ -29,6 +29,31 @@ using namespace std;
 class Solution {
 public:
 	int numIslands(vector<vector<char>>& grid) {
+		int m = grid.size();
+		if (m < 1)	return 0;
+		int n = grid[0].size();
 
+		int color = 0;
+		for (int i = 0; i < m; ++i) {
+			for (int j = 0; j < n; ++j) {
+				if ('1' == grid[i][j]) {
+					dfs(grid, m, n, i, j);
+					color++;
+				}
+			}
+		}
+
+		return color;
+	}
+
+	void dfs(vector<vector<char>>& grid, int m, int n, int i, int j) {
+		if ((i < 0) || (i >= m) || (j < 0) || (j >= n))	return;
+		if ('1' == grid[i][j]) {
+			grid[i][j] = '2';	// '2' means visited island cells
+			dfs(grid, m, n, i, j - 1);	// color left cells
+			dfs(grid, m, n, i - 1, j);	// color above cells
+			dfs(grid, m, n, i, j + 1);	// color right cells
+			dfs(grid, m, n, i + 1, j);	// color below cells
+		}
 	}
 };

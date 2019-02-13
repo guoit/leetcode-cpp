@@ -128,6 +128,7 @@
     <ClCompile Include="0218TheSkylineProblem.cpp" />
     <ClCompile Include="0220ContainsDuplicateIII.cpp" />
     <ClCompile Include="0224BasicCalculator.cpp" />
+    <ClCompile Include="0227BasicCalculatorII.cpp" />
     <ClCompile Include="0324WiggleSortII.cpp" />
     <ClCompile Include="0715RangeModule.cpp" />
     <ClCompile Include="0729MyCalendarI.cpp" />

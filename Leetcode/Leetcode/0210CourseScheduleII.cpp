@@ -37,12 +37,41 @@ You may assume that there are no duplicate edges in the input prerequisites.
 */
 
 #include <vector>
-
+#include <deque>
+#include <algorithm>
 using namespace std;
 
 class Solution {
 public:
 	vector<int> findOrder(int numCourses, vector<pair<int, int>>& prerequisites) {
+		vector<int> in(numCourses, 0);	// in degrees of nodes
+		vector<vector<int>> graph(numCourses, vector<int>());	// graph[i] contains all courses which i points to
+		vector<int> res;
 
+		for (auto& p : prerequisites) {
+			in[p.first]++;
+			graph[p.second].push_back(p.first);
+		}
+
+		deque<int> q;
+		for (int i = 0; i < numCourses; ++i) {
+			if (0 == in[i]) {
+				q.push_back(i);
+				res.push_back(i);
+			}
+		}
+
+		while (!q.empty()) {
+			int a = q.front();
+			q.pop_front();
+			for (int b : graph[a]) {
+				if (0 == --in[b]) {
+					q.push_back(b);
+					res.push_back(b);
+				}
+			}
+		}
+
+		return any_of(in.begin(), in.end(), [](int x)->bool {return x != 0; }) ? vector<int>() : res;
 	}
 };

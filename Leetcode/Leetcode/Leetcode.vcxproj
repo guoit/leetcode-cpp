@@ -141,6 +141,8 @@
     <ClCompile Include="0819MostCommonWord.cpp" />
     <ClCompile Include="0855ExamRoom.cpp" />
     <ClCompile Include="0870AdvantageShuffle.cpp" />
+    <ClCompile Include="amazon_MaximumMinimumPathcpp.cpp" />
+    <ClCompile Include="amazon_SubtreeWithMaximumAverage.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="utilities.h" />

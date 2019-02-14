@@ -47,12 +47,12 @@ static void myprint(map<T1, T2>& M) {
 }
 
 /* TreeNode definition */
-struct TreeNode {
+typedef struct TreeNode {
 	int val;
 	TreeNode *left;
 	TreeNode *right;
 	TreeNode(int x) : val(x), left(NULL), right(NULL) {}	
-};
+}TreeNode;
 
 /*Definition for singly - linked list.*/
 struct ListNode {

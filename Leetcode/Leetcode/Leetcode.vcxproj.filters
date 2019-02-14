@@ -93,6 +93,12 @@
     <ClCompile Include="0340LongestSubstringWithAtMostKDistinctCharacters.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="amazon_MaximumMinimumPathcpp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="amazon_SubtreeWithMaximumAverage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="utilities.h">

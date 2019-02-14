@@ -9,7 +9,9 @@ T is "ece" which its length is 3.
 */
 #include <string>
 #include <unordered_map>
+#include <unordered_set>
 #include <algorithm>
+#include <iostream>
 
 using namespace std;
 
@@ -52,4 +54,29 @@ public:
 
 		return res;
 	}
+
+	// brutal force solution O(N^3) to verify if above function is correct
+	int verify(string s, int k) {
+		int res = 0;
+		for (int i = 0; i < s.size(); ++i) {
+			for (int j = i; j < s.size(); ++j) {
+				unordered_set<char> unique;
+				for (int k = i; k <= j; ++k)
+					unique.insert(s[k]);
+				if (unique.size() == k)
+					++res;
+			}
+		}
+		return res;
+	}
 };
+
+int main() {
+	string s = "aabbccbbbcccdd";
+
+	Solution obj;
+	cout << obj.numberOfSubstringKDistinct(s, 2)<<endl;
+	cout << obj.verify(s, 2) << endl;
+	cin.get();
+	return 0;
+}

@@ -1,5 +1,5 @@
 /*
-Subtree: Maximum average node
+Subtree: Maximum average node	-	Amazon OA2
 
 Given a binary tree, find the subtree with maximum average. Return the root of the subtree.
 Example Given a binary tree:
@@ -24,6 +24,49 @@ struct TreeNode {
 class Solution {
 public:
 	TreeNode* findSubtree(TreeNode* root) {
+		maxAvg = -DBL_MAX;
+		res = NULL;
+		if (NULL == root)	return NULL;
+		getSubtreeCountSum(root);
 
+		return res;
 	}
+
+	// subfunction calculates number of nodes, and their sum, also checks if this average is the largest
+	pair<int, long> getSubtreeCountSum(TreeNode* root) {
+		if (NULL == root)	return { 0, 0L };
+		auto left = getSubtreeCountSum(root->left);
+		auto right = getSubtreeCountSum(root->right);
+		
+		long sum = left.second + right.second + root->val;
+		int cnt = left.first + right.first + 1;
+		double avg = (double)sum / (double)cnt;
+
+		if (avg > maxAvg) {
+			res = root;
+			maxAvg = avg;
+		}
+
+		return make_pair(cnt, sum);
+	}
+
+private:
+	double maxAvg;
+	TreeNode* res;
 };
+
+int main() {
+	TreeNode root(1);
+	root.left = &TreeNode(-5);
+	root.right = &TreeNode(11);
+	root.left->left = &TreeNode(1);
+	root.left->right = &TreeNode(2);
+	root.right->left = &TreeNode(4);
+	root.right->right = &TreeNode(-2);
+
+	Solution obj;
+	cout << obj.findSubtree(&root)->val << endl;
+
+	cin.get();
+	return 0;
+}

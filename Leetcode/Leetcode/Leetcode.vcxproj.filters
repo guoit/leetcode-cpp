@@ -99,6 +99,9 @@
     <ClCompile Include="amazon_SubtreeWithMaximumAverage.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="amazon_KMinimumDistances.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="utilities.h">

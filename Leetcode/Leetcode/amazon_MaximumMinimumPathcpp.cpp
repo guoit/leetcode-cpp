@@ -50,12 +50,12 @@ public:
 	}
 };
 
-int main() {
-	vector<vector<int>> matrix = { {8, 4, 7}, {6, 5, 9} };	// expected 5
-	Solution obj;
-	cout << obj.maxMinPath(matrix) << endl;
-
-	cin.get();
-	return 0;
-}
+//int main() {
+//	vector<vector<int>> matrix = { {8, 4, 7}, {6, 5, 9} };	// expected 5
+//	Solution obj;
+//	cout << obj.maxMinPath(matrix) << endl;
+//
+//	cin.get();
+//	return 0;
+//}
 

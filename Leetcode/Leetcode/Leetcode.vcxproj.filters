@@ -102,6 +102,9 @@
     <ClCompile Include="amazon_KMinimumDistances.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="amzon_KNearestPoints.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="utilities.h">

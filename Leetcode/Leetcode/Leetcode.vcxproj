@@ -144,6 +144,7 @@
     <ClCompile Include="amazon_KMinimumDistances.cpp" />
     <ClCompile Include="amazon_MaximumMinimumPathcpp.cpp" />
     <ClCompile Include="amazon_SubtreeWithMaximumAverage.cpp" />
+    <ClCompile Include="amzon_KNearestPoints.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="utilities.h" />

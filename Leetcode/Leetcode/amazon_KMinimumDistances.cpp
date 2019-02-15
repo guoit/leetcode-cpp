@@ -51,7 +51,65 @@ Input:
  Expected Return Value:
  5
 */
+#include <queue>
+#include <iostream>
+using namespace std;
 
+// BFS solution
 int removeObstacle(int numRows, int numColumns, int **lot) {
+	vector<pair<int, int>> dirs = { {0, -1}, {-1, 0}, {0, 1}, {1, 0} };
+	queue<pair<int, int>> q;
+	int steps = 0;
 
+	q.push({ 0, 0 });
+	lot[0][0] = -1;	// -1 means visited
+
+	while (!q.empty()) {
+		int n = q.size();
+		for (int i = 0; i < n; ++i) {
+			auto cur = q.front();
+			q.pop();
+			for (auto d : dirs) {
+				int x = cur.first + d.first;
+				int y = cur.second + d.second;
+				if (x > -1 && x < numRows && y > -1 && y < numColumns) {
+					if (9 == lot[x][y])	return steps + 1;
+					else if (1 == lot[x][y]) {
+						q.push({ x, y });
+						lot[x][y] = -1;
+					}
+				}
+			}
+		}
+		++steps;
+	}
+
+	return -1;
+}
+
+int main() {
+	int** p;
+	p = new int*[3];
+	for (int i = 0; i < 3; ++i) {
+		p[i] = new int[3]();
+	}
+	p[0][0] = 1;
+	p[0][1] = 0;
+	p[0][2] = 9;
+	p[1][0] = 1;
+	p[1][1] = 0;
+	p[1][2] = 1;
+	p[2][0] = 1;
+	p[2][1] = 1;
+	p[2][2] = 1;
+
+	cout << removeObstacle(3, 3, p) << endl;
+
+	for (int i = 0; i < 3; ++i) {
+		delete[] p[i];
+	}
+	delete[] p;
+
+	cin.get();
+	return 0;
 }

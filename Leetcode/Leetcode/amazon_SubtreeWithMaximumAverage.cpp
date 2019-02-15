@@ -55,18 +55,18 @@ private:
 	TreeNode* res;
 };
 
-int main() {
-	TreeNode root(1);
-	root.left = &TreeNode(-5);
-	root.right = &TreeNode(11);
-	root.left->left = &TreeNode(1);
-	root.left->right = &TreeNode(2);
-	root.right->left = &TreeNode(4);
-	root.right->right = &TreeNode(-2);
-
-	Solution obj;
-	cout << obj.findSubtree(&root)->val << endl;
-
-	cin.get();
-	return 0;
-}
+//int main() {
+//	TreeNode root(1);
+//	root.left = &TreeNode(-5);
+//	root.right = &TreeNode(11);
+//	root.left->left = &TreeNode(1);
+//	root.left->right = &TreeNode(2);
+//	root.right->left = &TreeNode(4);
+//	root.right->right = &TreeNode(-2);
+//
+//	Solution obj;
+//	cout << obj.findSubtree(&root)->val << endl;
+//
+//	cin.get();
+//	return 0;
+//}

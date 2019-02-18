@@ -87,29 +87,29 @@ int removeObstacle(int numRows, int numColumns, int **lot) {
 	return -1;
 }
 
-int main() {
-	int** p;
-	p = new int*[3];
-	for (int i = 0; i < 3; ++i) {
-		p[i] = new int[3]();
-	}
-	p[0][0] = 1;
-	p[0][1] = 0;
-	p[0][2] = 9;
-	p[1][0] = 1;
-	p[1][1] = 0;
-	p[1][2] = 1;
-	p[2][0] = 1;
-	p[2][1] = 1;
-	p[2][2] = 1;
-
-	cout << removeObstacle(3, 3, p) << endl;
-
-	for (int i = 0; i < 3; ++i) {
-		delete[] p[i];
-	}
-	delete[] p;
-
-	cin.get();
-	return 0;
-}
+//int main() {
+//	int** p;
+//	p = new int*[3];
+//	for (int i = 0; i < 3; ++i) {
+//		p[i] = new int[3]();
+//	}
+//	p[0][0] = 1;
+//	p[0][1] = 0;
+//	p[0][2] = 9;
+//	p[1][0] = 1;
+//	p[1][1] = 0;
+//	p[1][2] = 1;
+//	p[2][0] = 1;
+//	p[2][1] = 1;
+//	p[2][2] = 1;
+//
+//	cout << removeObstacle(3, 3, p) << endl;
+//
+//	for (int i = 0; i < 3; ++i) {
+//		delete[] p[i];
+//	}
+//	delete[] p;
+//
+//	cin.get();
+//	return 0;
+//}

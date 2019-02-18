@@ -23,19 +23,24 @@ using namespace std;
 
 class Solution {
 public:
-	static bool compare(int a, int b) {
-		string a_str = to_string(a);
-		string b_str = to_string(b);
 
-		return a_str + b_str > b_str + a_str;
-	}
+	// a standard way to provide complex compare function
+	struct compare {
+		bool operator()(int a, int b) {
+			return to_string(a) + to_string(b) > to_string(b) + to_string(a);
+		}
+	};
 
 	string largestNumber(vector<int>& nums) {
 		if (all_of(nums.begin(), nums.end(), [](int i) {return i == 0; })) {
 			return "0";
 		}// bug fixed: forget the cases when nums's elements are all 0
 
-		sort(nums.begin(), nums.end(), compare);
+		sort(nums.begin(), nums.end(), compare());	// use function object
+
+		/*sort(nums.begin(), nums.end(), [](int a, int b)->bool {
+			return to_string(a) + to_string(b) > to_string(b) + to_string(a);
+		});*/
 		
 		string res;
 		// use for loop to concatenate numbers
@@ -58,8 +63,8 @@ public:
 
 //int main() {
 //	Solution obj;
-//	//vector<int> nums = { 3,30,34,5,9 };
-//	vector<int> nums(10, 0);
+//	vector<int> nums = { 3,30,34,5,9 };
+//	//vector<int> nums(10, 0);
 //	cout << obj.largestNumber(nums) << endl;
 //	cin.get();
 //

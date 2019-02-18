@@ -133,6 +133,8 @@
     <ClCompile Include="0227BasicCalculatorII.cpp" />
     <ClCompile Include="0324WiggleSortII.cpp" />
     <ClCompile Include="0340LongestSubstringWithAtMostKDistinctCharacters.cpp" />
+    <ClCompile Include="0490TheMaze.cpp" />
+    <ClCompile Include="0505TheMazeII.cpp" />
     <ClCompile Include="0715RangeModule.cpp" />
     <ClCompile Include="0729MyCalendarI.cpp" />
     <ClCompile Include="0731MyCalendarII.cpp" />
@@ -141,6 +143,7 @@
     <ClCompile Include="0819MostCommonWord.cpp" />
     <ClCompile Include="0855ExamRoom.cpp" />
     <ClCompile Include="0870AdvantageShuffle.cpp" />
+    <ClCompile Include="amazon_Flight.cpp" />
     <ClCompile Include="amazon_KMinimumDistances.cpp" />
     <ClCompile Include="amazon_MaximumMinimumPathcpp.cpp" />
     <ClCompile Include="amazon_SubtreeWithMaximumAverage.cpp" />

@@ -14,12 +14,18 @@ using namespace std;
 
 #define SQUARE(x) (x)*(x)
 
-bool cmp(const pair<int, int> &a, const pair<int, int> &b) {
-	return SQUARE(a.first) + SQUARE(a.second) < SQUARE(b.first) + SQUARE(b.second);
-}
+struct compare {
+	bool operator()(pair<int, int> &a, pair<int, int> &b) {
+		return SQUARE(a.first) + SQUARE(a.second) < SQUARE(b.first) + SQUARE(b.second);
+	}
+}cmp;
+//bool cmp(const pair<int, int> &a, const pair<int, int> &b) {
+//	return SQUARE(a.first) + SQUARE(a.second) < SQUARE(b.first) + SQUARE(b.second);
+//}
 
 vector<pair<int, int>> KNearestGoods(vector<pair<int, int>> &goods, int K) {
-	priority_queue< pair<int, int>, vector<pair<int,int>>, decltype(&cmp)> q(cmp);
+	//priority_queue< pair<int, int>, vector<pair<int,int>>, decltype(&cmp)> q(cmp);
+	priority_queue< pair<int, int>, vector<pair<int, int>>, compare> q;
 	for (auto &g : goods)	q.push(g);
 
 	vector<pair<int, int>> res;

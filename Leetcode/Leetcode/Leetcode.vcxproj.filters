@@ -105,6 +105,15 @@
     <ClCompile Include="amzon_KNearestPoints.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="amazon_Flight.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0490TheMaze.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0505TheMazeII.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="utilities.h">

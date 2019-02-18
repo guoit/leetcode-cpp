@@ -50,8 +50,7 @@ using namespace std;
 
 class Solution {
 public:
-	// http://www.cnblogs.com/grandyang/p/6381458.html
-	// difference from above solution: I used dp[i][j] == -1 to mark [i][j] has been visited, in this way, we don't need to modify original matrix maze
+	// http://www.cnblogs.com/grandyang/p/6381458.html	
 	bool hasPath_DFS(vector<vector<int>>& maze, vector<int>& start, vector<int>& destination) {
 		if (maze.empty() || maze[0].empty())	return true;
 		const int m = maze.size(), n = maze[0].size();
@@ -87,7 +86,7 @@ public:
 	bool hasPath_BFS(vector<vector<int>>& maze, vector<int>& start, vector<int>& destination) {
 		if (maze.empty() || maze[0].empty())	return true;
 		const int m = maze.size(), n = maze[0].size();
-		vector<vector<bool>> visited(m, vector<bool>(n, false));	// we cannot mark maze as -1 as visited because this will affect further scrolling (further scrolling doesn't know if the cell was a wall or empty)
+		vector<vector<bool>> visited(m, vector<bool>(n, false));
 
 		queue<pair<int, int>> q;
 		q.push({ start[0], start[1] });
@@ -99,7 +98,7 @@ public:
 			if (t.first == destination[0] && t.second == destination[1])	return true;
 			for (auto & d : dirs) {
 				int x = t.first, y = t.second;
-				while (x > -1 && x < m && y > -1 && y < n && maze[x][y] == 0) {
+				while (x > -1 && x < m && y > -1 && y < n && maze[x][y] == 0) {//to try: we can also use maze[i][j] = -1 to mark [i][j] has been visited, and this will be changed to maze[x][y] != -1. The reason is that only maze[i][j] == 0 will be changed to -1 if visited, the wall place (1) will never be visited.
 					x += d.first;
 					y += d.second;
 				}
@@ -119,14 +118,14 @@ private:
 	vector<pair<int, int>> dirs{ {0, -1}, {-1, 0}, {0, 1}, {1, 0} };
 };
 
-int main() {
-
-	vector<vector<int>> maze{ {0, 0, 1, 0, 0}, {0, 0, 0, 0, 0}, {0, 0, 0, 1, 0}, {1, 1, 0, 1, 1}, {0, 0, 0, 0, 0} };
-	Solution obj;
-	vector<int> start{ 0, 4 };
-	vector<int> dest{ 3, 2 };
-	cout << obj.hasPath_DFS(maze, start, dest) << endl;
-
-	cin.get();
-	return 0;
-}
+//int main() {
+//
+//	vector<vector<int>> maze{ {0, 0, 1, 0, 0}, {0, 0, 0, 0, 0}, {0, 0, 0, 1, 0}, {1, 1, 0, 1, 1}, {0, 0, 0, 0, 0} };
+//	Solution obj;
+//	vector<int> start{ 0, 4 };
+//	vector<int> dest{ 3, 2 };
+//	cout << obj.hasPath_DFS(maze, start, dest) << endl;
+//
+//	cin.get();
+//	return 0;
+//}

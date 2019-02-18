@@ -143,6 +143,8 @@
     <ClCompile Include="0819MostCommonWord.cpp" />
     <ClCompile Include="0855ExamRoom.cpp" />
     <ClCompile Include="0870AdvantageShuffle.cpp" />
+    <ClCompile Include="amazon_ClosestTwoSum.cpp" />
+    <ClCompile Include="amazon_ConnectingAllCities_MinSpanningTree.cpp" />
     <ClCompile Include="amazon_Flight.cpp" />
     <ClCompile Include="amazon_KMinimumDistances.cpp" />
     <ClCompile Include="amazon_MaximumMinimumPathcpp.cpp" />

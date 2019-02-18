@@ -114,6 +114,12 @@
     <ClCompile Include="0505TheMazeII.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="amazon_ConnectingAllCities_MinSpanningTree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="amazon_ClosestTwoSum.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="utilities.h">

@@ -56,6 +56,7 @@ using namespace std;
 class Solution {
 public:
 	// https://www.cnblogs.com/grandyang/p/6725380.html
+	// kind of relaxing algorithm
 	int shortestDistance(vector<vector<int>>& maze, vector<int>& start, vector<int>& destination) {
 		int m = maze.size(), n = maze[0].size();
 		vector<vector<int>> dists(m, vector<int>(n, INT_MAX));

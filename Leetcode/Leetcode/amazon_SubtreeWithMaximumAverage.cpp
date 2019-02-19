@@ -42,7 +42,7 @@ public:
 		int cnt = left.first + right.first + 1;
 		double avg = (double)sum / (double)cnt;
 
-		if (avg > maxAvg) {
+		if (cnt > 1 && avg > maxAvg) {	// cnt > 1 to exclude tree leaves
 			res = root;
 			maxAvg = avg;
 		}

@@ -120,6 +120,9 @@
     <ClCompile Include="amazon_ClosestTwoSum.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="amazon_HighestFive.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="utilities.h">

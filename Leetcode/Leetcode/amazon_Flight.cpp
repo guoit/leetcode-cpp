@@ -39,38 +39,57 @@ public:
 		sort(forwardList.begin(), forwardList.end(), cmp);
 		sort(returnList.begin(), returnList.end(), cmp);
 
-		long curMax = LONG_MIN;
+		long curMax = LONG_MIN, curSum = 0;
 		vector<pair<int, int>> res;
 		auto f = forwardList.begin();	// f iterates from forward list's begin to end
 		auto r = returnList.rbegin();	// r iterates from return list's end to begin
 
-		for (; f != forwardList.end(); ++f) {
-			while ((r != returnList.rend()) && (f->second + r->second > maxDist)) {
+		while (f != forwardList.end() && r != returnList.rend()) {
+			curSum = f->second + r->second;
+			if (curSum > maxDist) {
 				++r;
 			}
-
-			if (r != returnList.rend()) {
-				long curSum = f->second + r->second;
+			else {
+				if (curSum > curMax)	res.clear();
 				if (curSum >= curMax) {
-					if (curSum > curMax)	res.clear();
 					curMax = curSum;
-					res.push_back({ f->first, r->first });
+					auto rr = r;	// rr is a reverse_iterator to find out duplicated travel distance
+					while (rr != returnList.rend() && rr->second == r->second) {
+						res.push_back({ f->first, rr->first });
+						++rr;
+					}					
 				}
+				++f;
 			}
 		}
+
+		//for (; f != forwardList.end(); ++f) {
+		//	while ((r != returnList.rend()) && (f->second + r->second > maxDist)) {
+		//		++r;
+		//	}
+
+		//	if (r != returnList.rend()) {
+		//		long curSum = f->second + r->second;
+		//		if (curSum >= curMax) {
+		//			if (curSum > curMax)	res.clear();
+		//			curMax = curSum;
+		//			res.push_back({ f->first, r->first });
+		//		}
+		//	}
+		//}
 
 		return res;
 	}
 };
 
-//int main() {
-//
-//	int maxDist = 10000;
-//	vector<pair<int, int>> forwardList = { {1, 3000},{2, 5000},{3, 7000},{4, 10000} };
-//	vector<pair<int, int>> returnList = { {1, 2000},{2, 3000},{3, 4000},{4, 5000} };
-//	Solution obj;
-//	auto res = obj.flight(maxDist, forwardList, returnList);
-//
-//	cin.get();
-//	return 0;
-//}
+int main() {
+
+	int maxDist = 1000;
+	vector<pair<int, int>> forwardList = { {1, 100},{2, 100},{3, 100},{4, 100}, {5, 150} };
+	vector<pair<int, int>> returnList = { {1, 200},{2, 200},{3, 200},{4, 200} };
+	Solution obj;
+	auto res = obj.flight(maxDist, forwardList, returnList);
+
+	cin.get();
+	return 0;
+}

@@ -69,12 +69,12 @@ public:
 	}
 };
 
-int main() {
-	//vector<int> nums{ -1, 1, 1, 2, 4, -4 };
-	vector<int> nums;
-	Solution obj;
-	auto res = obj.twoSumLessAndClosest(nums, 4);
-
-	cin.get();
-	return 0;
-}
+//int main() {
+//	//vector<int> nums{ -1, 1, 1, 2, 4, -4 };
+//	vector<int> nums;
+//	Solution obj;
+//	auto res = obj.twoSumLessAndClosest(nums, 4);
+//
+//	cin.get();
+//	return 0;
+//}

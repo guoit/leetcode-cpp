@@ -28,8 +28,9 @@ vector<pair<int, int>> KNearestGoods(vector<pair<int, int>> &goods, int K) {
 	priority_queue< pair<int, int>, vector<pair<int, int>>, compare> q;	// minimum heap
 	for (auto &g : goods) {
 		q.push(g);
-		if (q.size() > K)	q.pop();
+		if (q.size() > K)	q.pop();	// remove top (smallest distance from origin) if priority queue's size > K
 	}
+
 	vector<pair<int, int>> res(K);
 	for (int i = K-1; i > -1; --i) {
 		if (!q.empty()) {

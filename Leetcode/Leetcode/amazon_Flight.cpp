@@ -82,14 +82,14 @@ public:
 	}
 };
 
-int main() {
-
-	int maxDist = 1000;
-	vector<pair<int, int>> forwardList = { {1, 100},{2, 100},{3, 100},{4, 100}, {5, 150} };
-	vector<pair<int, int>> returnList = { {1, 200},{2, 200},{3, 200},{4, 200} };
-	Solution obj;
-	auto res = obj.flight(maxDist, forwardList, returnList);
-
-	cin.get();
-	return 0;
-}
+//int main() {
+//
+//	int maxDist = 1000;
+//	vector<pair<int, int>> forwardList = { {1, 100},{2, 100},{3, 100},{4, 100}, {5, 150} };
+//	vector<pair<int, int>> returnList = { {1, 200},{2, 200},{3, 200},{4, 200} };
+//	Solution obj;
+//	auto res = obj.flight(maxDist, forwardList, returnList);
+//
+//	cin.get();
+//	return 0;
+//}

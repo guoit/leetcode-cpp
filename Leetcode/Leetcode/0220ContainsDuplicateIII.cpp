@@ -40,11 +40,11 @@ public:
 	}
 };
 
-int main() {
-	vector<int> nums = {1, 2, 3, 1};
-	int k = 3, t = 0;
-	Solution obj;
-	cout << obj.containsNearbyAlmostDuplicate(nums, k, t);
-	cin.get();
-	return 0;
-}
+//int main() {
+//	vector<int> nums = {1, 2, 3, 1};
+//	int k = 3, t = 0;
+//	Solution obj;
+//	cout << obj.containsNearbyAlmostDuplicate(nums, k, t);
+//	cin.get();
+//	return 0;
+//}

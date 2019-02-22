@@ -69,14 +69,32 @@ public:
 		}
 		return res;
 	}
+
+	// follow-up for k-length substring with exact k distinct characters
+	// output the unique substrings list
+	vector<string> substringKDistinct(string s, int k) {
+		unordered_map<char, int> cnt;
+		unordered_set<string> res;
+
+		for (int i = 0; i < s.size(); ++i) {
+			if (i >= k) {
+				if (--cnt[s[i - k]] == 0)	cnt.erase(s[i - k]);
+			}
+			++cnt[s[i]];
+			if (cnt.size() == k)	res.insert(s.substr(i - k + 1, k));
+		}
+
+		return vector<string>(res.begin(), res.end());
+	}
 };
 
-//int main() {
-//	string s = "aabbccbbbcccdd";
-//
-//	Solution obj;
-//	cout << obj.numberOfSubstringKDistinct(s, 2)<<endl;
-//	cout << obj.verify(s, 2) << endl;
-//	cin.get();
-//	return 0;
-//}
+int main() {
+	//string s = "aabbccbbbcccdd";
+	string s = "abac";
+	Solution obj;
+	cout << obj.numberOfSubstringKDistinct(s, 2)<<endl;
+	cout << obj.verify(s, 2) << endl;
+	auto res = obj.substringKDistinct(s, 3);
+	cin.get();
+	return 0;
+}

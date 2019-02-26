@@ -88,13 +88,13 @@ public:
 	}
 };
 
-int main() {
-	//string s = "aabbccbbbcccdd";
-	string s = "abac";
-	Solution obj;
-	cout << obj.numberOfSubstringKDistinct(s, 2)<<endl;
-	cout << obj.verify(s, 2) << endl;
-	auto res = obj.substringKDistinct(s, 3);
-	cin.get();
-	return 0;
-}
+//int main() {
+//	//string s = "aabbccbbbcccdd";
+//	string s = "abac";
+//	Solution obj;
+//	cout << obj.numberOfSubstringKDistinct(s, 2)<<endl;
+//	cout << obj.verify(s, 2) << endl;
+//	auto res = obj.substringKDistinct(s, 3);
+//	cin.get();
+//	return 0;
+//}

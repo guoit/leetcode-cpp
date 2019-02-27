@@ -137,6 +137,8 @@
     <ClCompile Include="0246StrobogrammaticNumber.cpp" />
     <ClCompile Include="0247StrobogrammaticNumberII.cpp" />
     <ClCompile Include="0248StrobogrammaticNumberIII.cpp" />
+    <ClCompile Include="0249GroupShiftedStrings.cpp" />
+    <ClCompile Include="0250CountUnivalueSubtrees.cpp" />
     <ClCompile Include="0324WiggleSortII.cpp" />
     <ClCompile Include="0340LongestSubstringWithAtMostKDistinctCharacters.cpp" />
     <ClCompile Include="0490TheMaze.cpp" />

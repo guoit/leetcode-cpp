@@ -53,3 +53,11 @@ public:
 		return res;
 	}
 };
+
+//int main() {
+//	vector<string> words{ "abc", "bcd", "acef", "xyz", "az", "ba", "a", "z" };
+//	Solution obj;
+//	auto res = obj.groupStrings(words);
+//	cin.get();
+//	return 0;
+//}

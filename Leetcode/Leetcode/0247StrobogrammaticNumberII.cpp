@@ -71,9 +71,9 @@ public:
 };
 
 
-int main() {
-	Solution obj;
-	auto res = obj.findStrobogrammatic2(3);
-	cin.get();
-	return 0;
-}
+//int main() {
+//	Solution obj;
+//	auto res = obj.findStrobogrammatic2(3);
+//	cin.get();
+//	return 0;
+//}

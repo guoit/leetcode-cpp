@@ -139,6 +139,9 @@
     <ClCompile Include="0248StrobogrammaticNumberIII.cpp" />
     <ClCompile Include="0249GroupShiftedStrings.cpp" />
     <ClCompile Include="0250CountUnivalueSubtrees.cpp" />
+    <ClCompile Include="0251Flatten2DVector.cpp" />
+    <ClCompile Include="0252MeetingRooms.cpp" />
+    <ClCompile Include="0253MeetingRoomsII.cpp" />
     <ClCompile Include="0324WiggleSortII.cpp" />
     <ClCompile Include="0340LongestSubstringWithAtMostKDistinctCharacters.cpp" />
     <ClCompile Include="0490TheMaze.cpp" />

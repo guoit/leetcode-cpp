@@ -147,6 +147,15 @@
     <ClCompile Include="0250CountUnivalueSubtrees.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="0251Flatten2DVector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0252MeetingRooms.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0253MeetingRoomsII.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="utilities.h">

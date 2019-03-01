@@ -50,13 +50,13 @@ private:
 	int y;
 };
 
-int main() {
-	vector<vector<int>> v2 = { {1, 2}, {3}, {5,6 } };
-	Vector2D v(v2);
-	while (v.hasNext()) {
-		cout << v.next() << endl;
-	}
-
-	cin.get();
-	return 0;
-}
+//int main() {
+//	vector<vector<int>> v2 = { {1, 2}, {3}, {5,6 } };
+//	Vector2D v(v2);
+//	while (v.hasNext()) {
+//		cout << v.next() << endl;
+//	}
+//
+//	cin.get();
+//	return 0;
+//}

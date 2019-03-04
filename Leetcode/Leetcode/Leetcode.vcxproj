@@ -144,6 +144,9 @@
     <ClCompile Include="0253MeetingRoomsII.cpp" />
     <ClCompile Include="0254FactorCombinations.cpp" />
     <ClCompile Include="0255VerifyPreorderSequenceInBST.cpp" />
+    <ClCompile Include="0256PaintHouse.cpp" />
+    <ClCompile Include="0259ThreeSumSmaller.cpp" />
+    <ClCompile Include="0261GraphValidTree.cpp" />
     <ClCompile Include="0324WiggleSortII.cpp" />
     <ClCompile Include="0340LongestSubstringWithAtMostKDistinctCharacters.cpp" />
     <ClCompile Include="0490TheMaze.cpp" />

@@ -68,10 +68,10 @@ public:
 	}
 };
 
-int main() {
-	Solution obj;
-	auto res = obj.getFactors(32);
-
-	cin.get();
-	return 0;
-}
+//int main() {
+//	Solution obj;
+//	auto res = obj.getFactors(32);
+//
+//	cin.get();
+//	return 0;
+//}

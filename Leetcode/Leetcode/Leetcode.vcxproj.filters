@@ -162,6 +162,15 @@
     <ClCompile Include="0255VerifyPreorderSequenceInBST.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="0256PaintHouse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0259ThreeSumSmaller.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0261GraphValidTree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="utilities.h">

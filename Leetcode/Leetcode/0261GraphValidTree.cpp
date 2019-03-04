@@ -21,32 +21,29 @@ Note: you can assume that no duplicate edges will appear in edges. Since all edg
 using namespace std;
 class Solution {
 public:
-	// union find
+	// union find method
 	bool validTree(int n, vector<pair<int, int>>& edges) {
-		unordered_map<int, vector<int>> graph;
-		for (auto &t : edges) {
-			graph[t.first].push_back(t.second);
-			graph[t.second].push_back(t.first);
+		vector<int> root(n, -1);
+
+		for (auto &edge : edges) {
+			int p = find(root, edge.first);
+			int q = find(root, edge.second);
+			if (p == q)	return false;
+			root[p] = q;
 		}
 
-		vector<int> root;
-		for (int i = 0; i < n; ++i)	root[i] = i;
-
-
+		return edges.size() == n - 1;
 	}
 
 	int find(vector<int> &root, int i) {
-		while (root[i] != i) {
-			i = root[i];
-		}
-
+		while (root[i] != -1) i = root[i];
 		return i;
 	}
 };
 
 int main() {
 	int n = 5;
-	vector<pair<int, int>> edges{ {0,1}, {1,2}, {2, 3}, {1,3}, {1,4} };
+	vector<pair<int, int>> edges{ {0,1}, {1,2}, {1,3}, {1,4} };
 	Solution obj;
 	cout << obj.validTree(n, edges) << endl;
 

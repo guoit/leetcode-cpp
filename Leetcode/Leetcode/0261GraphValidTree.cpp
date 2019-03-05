@@ -16,12 +16,13 @@ According to the definition of tree on Wikipedia: “a tree is an undirected graph
 Note: you can assume that no duplicate edges will appear in edges. Since all edges are undirected, [0, 1] is the same as [1, 0] and thus will not appear together in edges.
 */
 #include <vector>
-#include <unordered_map>
+#include <unordered_set>
+#include <queue>
 #include <iostream>
 using namespace std;
 class Solution {
 public:
-	// union find method
+	// best solution: union find method
 	bool validTree(int n, vector<pair<int, int>>& edges) {
 		vector<int> root(n, -1);
 
@@ -39,13 +40,67 @@ public:
 		while (root[i] != -1) i = root[i];
 		return i;
 	}
+
+	// BFS solution
+	bool validTree2(int n, vector<pair<int, int>>& edges) {
+		vector<unordered_set<int>> g(n, unordered_set<int>());
+
+		for (auto &e : edges) {
+			g[e.first].insert(e.second);
+			g[e.second].insert(e.first);
+		}
+
+		unordered_set<int> visited{ { 0 } };
+		queue<int> q{ { 0 } };
+
+		while (!q.empty()) {
+			int src = q.front(); q.pop();
+			for (int dst : g[src]) {
+				if (visited.count(dst))	return false;
+				q.push(dst);
+				visited.insert(dst);
+				g[dst].erase(src);	// remove the edge from dst to src, so there is no way to reach src again if there is no loop
+				// we can't remove edge from src to dst because this will cause exception in the next for loop
+			}
+		}
+
+		return visited.size() == n;
+	}
+
+	// DFS solution
+	bool validTree3(int n, vector<pair<int, int>>& edges) {
+		vector<vector<int>> g(n, vector<int>());
+		unordered_set<int> visited;
+
+		for (auto &e : edges) {
+			g[e.first].push_back(e.second);
+			g[e.second].push_back(e.first);
+		}
+
+		if (!dfs(g, visited, -1, 0))	return false;
+
+		return visited.size() == n;
+	}
+
+	bool dfs(vector<vector<int>> &g, unordered_set<int> &visited, int pre, int cur) {
+		if (visited.count(cur))	return false;
+		visited.insert(cur);
+		for (int next : g[cur]) {
+			if (next != pre) {
+				if (!dfs(g, visited, cur, next)) return false;
+			}
+		}
+
+		return true;
+	}
 };
 
 int main() {
 	int n = 5;
-	vector<pair<int, int>> edges{ {0,1}, {1,2}, {1,3}, {1,4} };
+	//vector<pair<int, int>> edges{ {0,1}, {0,2}, {0,3}, {1,4} };
+	vector<pair<int, int>> edges{ {0,1}, {0,2}, {0,3}, {2,3}, {1,4} };
 	Solution obj;
-	cout << obj.validTree(n, edges) << endl;
+	cout << obj.validTree3(n, edges) << endl;
 
 	cin.get();
 	return 0;

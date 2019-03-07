@@ -171,6 +171,12 @@
     <ClCompile Include="0261GraphValidTree.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="twosigma_Substrings.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0265PaintHouseII.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="utilities.h">

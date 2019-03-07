@@ -95,13 +95,13 @@ public:
 	}
 };
 
-int main() {
-	int n = 5;
-	//vector<pair<int, int>> edges{ {0,1}, {0,2}, {0,3}, {1,4} };
-	vector<pair<int, int>> edges{ {0,1}, {0,2}, {0,3}, {2,3}, {1,4} };
-	Solution obj;
-	cout << obj.validTree3(n, edges) << endl;
-
-	cin.get();
-	return 0;
-}
+//int main() {
+//	int n = 5;
+//	//vector<pair<int, int>> edges{ {0,1}, {0,2}, {0,3}, {1,4} };
+//	vector<pair<int, int>> edges{ {0,1}, {0,2}, {0,3}, {2,3}, {1,4} };
+//	Solution obj;
+//	cout << obj.validTree3(n, edges) << endl;
+//
+//	cin.get();
+//	return 0;
+//}

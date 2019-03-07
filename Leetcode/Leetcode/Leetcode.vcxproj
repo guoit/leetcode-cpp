@@ -147,6 +147,7 @@
     <ClCompile Include="0256PaintHouse.cpp" />
     <ClCompile Include="0259ThreeSumSmaller.cpp" />
     <ClCompile Include="0261GraphValidTree.cpp" />
+    <ClCompile Include="0265PaintHouseII.cpp" />
     <ClCompile Include="0324WiggleSortII.cpp" />
     <ClCompile Include="0340LongestSubstringWithAtMostKDistinctCharacters.cpp" />
     <ClCompile Include="0490TheMaze.cpp" />
@@ -167,6 +168,7 @@
     <ClCompile Include="amazon_MaximumMinimumPathcpp.cpp" />
     <ClCompile Include="amazon_SubtreeWithMaximumAverage.cpp" />
     <ClCompile Include="amzon_KNearestPoints.cpp" />
+    <ClCompile Include="twosigma_Substrings.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="utilities.h" />

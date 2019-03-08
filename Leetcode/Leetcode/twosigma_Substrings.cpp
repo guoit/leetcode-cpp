@@ -72,11 +72,11 @@ public:
 	}
 };
 
-int main()
-{
-	string s = "aab";
-	Solution obj;
-	auto res = obj.findSubstrings(s);
-	cin.get();
-	return 0;
-}
+//int main()
+//{
+//	string s = "aab";
+//	Solution obj;
+//	auto res = obj.findSubstrings(s);
+//	cin.get();
+//	return 0;
+//}

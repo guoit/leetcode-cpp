@@ -101,12 +101,12 @@ public:
 	}
 };
 
-int main()
-{
-	vector<vector<int>> costs{ {10, 2, 3}, {10, 1, 9}, {5, 6, 7} };	//expect 9
-	Solution obj;
-	cout << obj.minCostII2(costs)<<endl;
-
-	cin.get();
-	return 0;
-}
+//int main()
+//{
+//	vector<vector<int>> costs{ {10, 2, 3}, {10, 1, 9}, {5, 6, 7} };	//expect 9
+//	Solution obj;
+//	cout << obj.minCostII2(costs)<<endl;
+//
+//	cin.get();
+//	return 0;
+//}

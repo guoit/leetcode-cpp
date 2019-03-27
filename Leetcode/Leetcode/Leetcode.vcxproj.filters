@@ -180,6 +180,9 @@
     <ClCompile Include="0266PalindromePermutation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="0981TimeBasedKeyValueStore.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="utilities.h">

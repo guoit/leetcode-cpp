@@ -183,6 +183,12 @@
     <ClCompile Include="0981TimeBasedKeyValueStore.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="0267PalindromePermutationII.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0269AlienDictionary.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="utilities.h">

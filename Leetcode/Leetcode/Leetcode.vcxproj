@@ -149,6 +149,8 @@
     <ClCompile Include="0261GraphValidTree.cpp" />
     <ClCompile Include="0265PaintHouseII.cpp" />
     <ClCompile Include="0266PalindromePermutation.cpp" />
+    <ClCompile Include="0267PalindromePermutationII.cpp" />
+    <ClCompile Include="0269AlienDictionary.cpp" />
     <ClCompile Include="0324WiggleSortII.cpp" />
     <ClCompile Include="0340LongestSubstringWithAtMostKDistinctCharacters.cpp" />
     <ClCompile Include="0490TheMaze.cpp" />

@@ -44,11 +44,14 @@ If the order is invalid, return an empty string.
 There may be multiple valid order of letters, return any one of them is fine.
 */
 #include <string>
+#include <unordered_set>
+#include <deque>
 #include <vector>
 using namespace std;
 
 class Solution {
 public:
+	// see python solution
 	string alienOrder(vector<string>& words) {
 	}
 };

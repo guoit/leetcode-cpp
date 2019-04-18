@@ -189,6 +189,9 @@
     <ClCompile Include="0269AlienDictionary.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="0271EncodeAndDecodeStrings.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="utilities.h">

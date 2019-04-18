@@ -75,16 +75,16 @@ private:
  * obj->set(key,value,timestamp);
  * string param_2 = obj->get(key,timestamp);
  */
-int main() {
-	TimeMap obj;
-	TimeMap kv;
-	kv.set("foo", "bar", 1); // store the key "foo" and value "bar" along with timestamp = 1
-	cout<<kv.get("foo", 1)<<endl;  // output "bar"
-	cout<<kv.get("foo", 3)<<endl; // output "bar" since there is no value corresponding to foo at timestamp 3 and timestamp 2, then the only value is at timestamp 1 ie "bar"
-	kv.set("foo", "bar2", 4);
-	cout<<kv.get("foo", 4)<<endl; // output "bar2"
-	cout<<kv.get("foo", 5)<<endl; //output "bar2"
-	cin.get();
-	return 0;
-}
+//int main() {
+//	TimeMap obj;
+//	TimeMap kv;
+//	kv.set("foo", "bar", 1); // store the key "foo" and value "bar" along with timestamp = 1
+//	cout<<kv.get("foo", 1)<<endl;  // output "bar"
+//	cout<<kv.get("foo", 3)<<endl; // output "bar" since there is no value corresponding to foo at timestamp 3 and timestamp 2, then the only value is at timestamp 1 ie "bar"
+//	kv.set("foo", "bar2", 4);
+//	cout<<kv.get("foo", 4)<<endl; // output "bar2"
+//	cout<<kv.get("foo", 5)<<endl; //output "bar2"
+//	cin.get();
+//	return 0;
+//}
 

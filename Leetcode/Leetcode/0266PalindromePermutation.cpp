@@ -14,6 +14,7 @@ If each character occurs even number of times, then it must be a palindrome. How
 */
 #include <string>
 #include <bitset>
+#include <iostream>
 using namespace std;
 
 class Solution {
@@ -27,3 +28,10 @@ public:
 		return b.count() < 2;
 	}
 };
+
+//int main() {
+//	Solution obj;
+//	cout<<obj.canPermutePalindrome("aab");
+//	cin.get();
+//	return 0;
+//}

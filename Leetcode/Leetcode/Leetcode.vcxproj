@@ -161,6 +161,7 @@
     <ClCompile Include="0731MyCalendarII.cpp" />
     <ClCompile Include="0732MyCalendarIII.cpp" />
     <ClCompile Include="0741CherryPickup.cpp" />
+    <ClCompile Include="0786KthSmallestPrimeFraction.cpp" />
     <ClCompile Include="0819MostCommonWord.cpp" />
     <ClCompile Include="0855ExamRoom.cpp" />
     <ClCompile Include="0870AdvantageShuffle.cpp" />

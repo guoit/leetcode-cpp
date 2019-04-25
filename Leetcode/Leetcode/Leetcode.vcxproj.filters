@@ -195,6 +195,9 @@
     <ClCompile Include="0786KthSmallestPrimeFraction.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="0281ZigzagIterator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="utilities.h">

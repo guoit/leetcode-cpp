@@ -90,9 +90,9 @@ public:
 	}
 };
 
-int main() {
-	Solution obj;
-	auto res = obj.generatePalindromes2("aaa");
-	cin.get();
-	return 0;
-}
+//int main() {
+//	Solution obj;
+//	auto res = obj.generatePalindromes2("aaa");
+//	cin.get();
+//	return 0;
+//}

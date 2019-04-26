@@ -14,7 +14,7 @@ Can you do it in O(n) time and/or in-place with O(1) extra space?
 #include <iostream>
 #include <vector>
 #include <algorithm>
-
+#include "utilities.h"
 using namespace std;
 
 class Solution {
@@ -39,15 +39,12 @@ public:
 	}
 };
 
-//int main() {
-//	vector<int> nums = { 1, 5, 1, 1, 6, 4 };
-//	Solution obj;
-//	obj.WiggleSort(nums);
-//	for (auto num : nums) {
-//		cout << num << ' ';
-//	}
-//	cout << endl;
-//	cin.get();
-//
-//	return 0;
-//}
+int main() {
+	vector<int> nums = { 1, 5, 1, 1, 6, 4 };
+	Solution obj;
+	obj.WiggleSort(nums);
+	cout << nums << endl;
+	cin.get();
+
+	return 0;
+}

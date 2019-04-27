@@ -42,7 +42,7 @@ public:
 				remains[num] = 1;
 			}
 		}
-		//myprint(remains);
+		//cout<<remains<<endl;
 
 		vector<int> res;
 		for (int num : B) {
@@ -66,7 +66,7 @@ public:
 //	vector<int> B{ 13,25,32,11 };
 //	
 //	vector<int> C = obj.advantageCount(A, B);
-//	myprint(C);	
+//	cout<<C<<endl;
 //
 //	cin.get();
 //	return 0;

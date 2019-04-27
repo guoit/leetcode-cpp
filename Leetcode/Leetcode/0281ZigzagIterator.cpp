@@ -72,14 +72,14 @@ private:
 	queue<pair<vector<int>::iterator, vector<int>::iterator>> q;
 };
 
-int main() {
-	vector<int> v1 = { 1,2 };
-	vector<int> v2 = {3,4,5,6};
-	ZigzagIterator2 obj(v1, v2);
-	while (obj.hasNext()) {
-		cout << obj.next() << endl;
-	}
-	cin.get();
-
-	return 0;
-}
+//int main() {
+//	vector<int> v1 = { 1,2 };
+//	vector<int> v2 = {3,4,5,6};
+//	ZigzagIterator2 obj(v1, v2);
+//	while (obj.hasNext()) {
+//		cout << obj.next() << endl;
+//	}
+//	cin.get();
+//
+//	return 0;
+//}

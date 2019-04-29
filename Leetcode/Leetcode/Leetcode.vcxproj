@@ -155,6 +155,7 @@
     <ClCompile Include="0281ZigzagIterator.cpp" />
     <ClCompile Include="0285InorderSuccessorInBST.cpp" />
     <ClCompile Include="0286WallsAndGates.cpp" />
+    <ClCompile Include="0288UniqueWordAbreviation.cpp" />
     <ClCompile Include="0324WiggleSortII.cpp" />
     <ClCompile Include="0340LongestSubstringWithAtMostKDistinctCharacters.cpp" />
     <ClCompile Include="0490TheMaze.cpp" />

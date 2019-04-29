@@ -39,12 +39,12 @@ public:
 	}
 };
 
-int main() {
-	vector<int> nums = { 1, 5, 1, 1, 6, 4 };
-	Solution obj;
-	obj.WiggleSort(nums);
-	cout << nums << endl;
-	cin.get();
-
-	return 0;
-}
+//int main() {
+//	vector<int> nums = { 1, 5, 1, 1, 6, 4 };
+//	Solution obj;
+//	obj.WiggleSort(nums);
+//	cout << nums << endl;
+//	cin.get();
+//
+//	return 0;
+//}

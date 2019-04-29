@@ -204,6 +204,9 @@
     <ClCompile Include="0286WallsAndGates.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="0288UniqueWordAbreviation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="utilities.h">

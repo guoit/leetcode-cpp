@@ -53,12 +53,12 @@ private:
 	unordered_map<string, string> m;
 };
 
-int main()
-{
-	vector<string> dictionary{"door", "door"};
-	string word = "door";
-	ValidWordAbbr obj(dictionary);
-	cout << obj.isUnique(word) << endl;
-	cin.get();
-	return 0;
-}
+//int main()
+//{
+//	vector<string> dictionary{"door", "door"};
+//	string word = "door";
+//	ValidWordAbbr obj(dictionary);
+//	cout << obj.isUnique(word) << endl;
+//	cin.get();
+//	return 0;
+//}

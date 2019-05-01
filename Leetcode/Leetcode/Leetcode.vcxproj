@@ -157,6 +157,8 @@
     <ClCompile Include="0286WallsAndGates.cpp" />
     <ClCompile Include="0288UniqueWordAbreviation.cpp" />
     <ClCompile Include="0291WordPatternII.cpp" />
+    <ClCompile Include="0293FlipGame.cpp" />
+    <ClCompile Include="0294FlipGameII.cpp" />
     <ClCompile Include="0324WiggleSortII.cpp" />
     <ClCompile Include="0340LongestSubstringWithAtMostKDistinctCharacters.cpp" />
     <ClCompile Include="0490TheMaze.cpp" />

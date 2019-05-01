@@ -210,6 +210,12 @@
     <ClCompile Include="0291WordPatternII.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="0293FlipGame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0294FlipGameII.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="utilities.h">

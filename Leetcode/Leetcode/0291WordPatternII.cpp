@@ -54,16 +54,16 @@ public:
 	}
 };
 
-int main()
-{
-	//string pattern = "abab";
-	//string str = "redblueredblue";
-	//string pattern = "aabb";
-	//string str = "xyzabcxzyabc";
-	string pattern = "aaaa";
-	string str = "asdasdasdasd";
-	Solution obj;
-	cout << obj.wordPatternMatch(pattern, str) << endl;
-	cin.get();
-	return 0;
-}
+//int main()
+//{
+//	//string pattern = "abab";
+//	//string str = "redblueredblue";
+//	//string pattern = "aabb";
+//	//string str = "xyzabcxzyabc";
+//	string pattern = "aaaa";
+//	string str = "asdasdasdasd";
+//	Solution obj;
+//	cout << obj.wordPatternMatch(pattern, str) << endl;
+//	cin.get();
+//	return 0;
+//}

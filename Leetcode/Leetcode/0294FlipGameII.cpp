@@ -20,6 +20,21 @@ using namespace std;
 class Solution {
 public:
 	bool canWin(string s) {
-
+		for (int i = 0; i < s.size() - 1; ++i) {
+			if (s[i] == '+' && s[i + 1] == '+') {
+				if (!canWin(s.substr(0, i) + "--" + s.substr(i + 2, s.size() - i - 2)))
+					return true;
+			}
+		}
+		return false;
 	}
 };
+
+int main()
+{
+	string s = "+++++";
+	Solution obj;
+	cout << obj.canWin(s) << endl;
+	cin.get();
+	return 0;
+}

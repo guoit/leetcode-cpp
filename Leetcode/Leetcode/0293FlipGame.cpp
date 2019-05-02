@@ -40,11 +40,11 @@ public:
 	}
 };
 
-int main()
-{
-	string s = "++++";
-	Solution obj;
-	auto res = obj.generatePossibleNextMoves(s);
-	cin.get();
-	return 0;
-}
+//int main()
+//{
+//	string s = "++++";
+//	Solution obj;
+//	auto res = obj.generatePossibleNextMoves(s);
+//	cin.get();
+//	return 0;
+//}

@@ -30,11 +30,11 @@ public:
 	}
 };
 
-int main()
-{
-	string s = "+++++";
-	Solution obj;
-	cout << obj.canWin(s) << endl;
-	cin.get();
-	return 0;
-}
+//int main()
+//{
+//	string s = "+++++";
+//	Solution obj;
+//	cout << obj.canWin(s) << endl;
+//	cin.get();
+//	return 0;
+//}

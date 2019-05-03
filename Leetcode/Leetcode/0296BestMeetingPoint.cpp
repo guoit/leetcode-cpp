@@ -39,11 +39,11 @@ public:
 	}
 };
 
-int main()
-{
-	vector<vector<int>> g{ {0, 0}, {0,4}, {2,2} };
-	Solution obj;
-	cout << obj.minTotalDistance(g) << endl;
-	cin.get();
-	return 0;
-}
+//int main()
+//{
+//	vector<vector<int>> g{ {0, 0}, {0,4}, {2,2} };
+//	Solution obj;
+//	cout << obj.minTotalDistance(g) << endl;
+//	cin.get();
+//	return 0;
+//}

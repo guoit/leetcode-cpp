@@ -219,6 +219,9 @@
     <ClCompile Include="0296BestMeetingPoint.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="0298BinaryTreeLongestConsecutiveSequence.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="utilities.h">

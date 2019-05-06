@@ -222,6 +222,9 @@
     <ClCompile Include="0298BinaryTreeLongestConsecutiveSequence.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="0302SmallestRectangleEnclosingBlackPixels.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="utilities.h">

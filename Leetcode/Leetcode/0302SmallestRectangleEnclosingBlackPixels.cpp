@@ -22,12 +22,12 @@ public:
 	int minArea(vector<vector<char>>& image, int x, int y) {
 		const int m = image.size();
 		const int n = image[0].size();
-		int left = binarysearch(image, 0, y, false, true);
-		int right = binarysearch(image, y, n - 1, false, false);
-		int up = binarysearch(image, 0, x, true, true);
-		int down = binarysearch(image, x, m - 1, true, false);
-		cout << left << right << up << down << endl;
-		return (right - left + 1)*(down - up + 1);
+		int left = binarysearch(image, 0, y, false, true);	// find the first column with all 1s, should be some column between 0 and y
+		int right = binarysearch(image, y, n, false, false);	// note the upper limit of binary search is "n" because the search find the first column with all 0s, which may not exist from y to n-1
+		int up = binarysearch(image, 0, x, true, true);	// find the first row with all 1s, should be some column between 0 and x
+		int down = binarysearch(image, x, m, true, false); // note the upper limit of binary search is "m" because the search find the first row with all 0s, which may not exist from x to m-1
+		//cout << left << right << up << down << endl;
+		return (right - left)*(down - up);
 	}
 
 

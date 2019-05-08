@@ -63,12 +63,12 @@ public:
 		return high;
 	}
 };
-
-int main() {
-
-	vector<vector<char>> image{ {'0','0','1','0'},  {'0','1','1','0'},  {'0','1','0','0'} };
-	Solution obj;
-	cout << obj.minArea(image, 0, 2);
-	cin.get();
-	return 0;
-}
+//
+//int main() {
+//
+//	vector<vector<char>> image{ {'0','0','1','0'},  {'0','1','1','0'},  {'0','1','0','0'} };
+//	Solution obj;
+//	cout << obj.minArea(image, 0, 2);
+//	cin.get();
+//	return 0;
+//}

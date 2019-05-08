@@ -10,7 +10,7 @@ using namespace std;
 
 /* Print vector like [1, 2, 3, 4] */
 template<typename T>
-ostream& operator<<(ostream& cout, vector<T>& A) {
+ostream& operator<<(ostream& cout, vector<T> A) {
 	cout << "[";
 	for (auto it = A.begin(); it != A.end(); ++it) {
 		cout << *it;
@@ -25,7 +25,7 @@ ostream& operator<<(ostream& cout, vector<T>& A) {
 
 /* Print set like {1, 2, 3, 4} */
 template<typename T>
-ostream& operator<<(ostream& cout, set<T>& S) {
+ostream& operator<<(ostream& cout, set<T> S) {
 	cout << "{";
 	for (auto it = S.begin(); it != S.end(); ++it) {
 		cout << *it;
@@ -40,7 +40,7 @@ ostream& operator<<(ostream& cout, set<T>& S) {
 
 /* Print map like {a:1, b:2, c:3, d:4} */
 template<typename T1, typename T2>
-ostream& operator<<(ostream& cout, map<T1, T2>& M) {
+ostream& operator<<(ostream& cout, map<T1, T2> M) {
 	cout << "{";
 	for (auto it = M.begin(); it != M.end(); ++it) {
 		cout << it->first << ":" << it->second;

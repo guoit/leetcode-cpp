@@ -88,13 +88,13 @@ public:
 	}
 };
 
-int main() {
-	Solution obj;
-
-	int m = 4, n = 4;
-	vector<pair<int, int>> positions{ {1,1},{2,0},{2,2},{3,1}, {2, 1} };	// expect [1, 2, 3, 4, 1]
-
-	cout << obj.numIslands2(m, n, positions) << endl;
-	cin.get();
-	return 0;
-}
+//int main() {
+//	Solution obj;
+//
+//	int m = 4, n = 4;
+//	vector<pair<int, int>> positions{ {1,1},{2,0},{2,2},{3,1}, {2, 1} };	// expect [1, 2, 3, 4, 1]
+//
+//	cout << obj.numIslands2(m, n, positions) << endl;
+//	cin.get();
+//	return 0;
+//}

@@ -26,21 +26,24 @@ using namespace std;
 class Solution {
 public:
 	// https://segmentfault.com/a/1190000004187914
-	// easier to understand
+	// easier to understand solution
+	// Use BFS to add distance from building together, then take the minimum added distance
+	// but also must check that the empty space can be reached by all buildings, this can be done by tracking number of buildings reached
 	int shortestDistance(vector<vector<int>>& grid) {
 		if (grid.empty() || grid[0].empty())	return 0;
 		int m = grid.size(), n = grid[0].size();
 
+		vector<vector<int>> dirs{ {0,-1},{-1,0},{0,1},{1,0} };
 		vector<vector<int>> dist(m, vector<int>(n, 0));	// added distance from all buildings
 		vector<vector<int>> nums(m, vector<int>(n, 0));	// number of buildings reached
 
-		int numBuilding = 0;
+		int numBuilding = 0;	// total number of buildings
 
 		for (int i = 0; i < m; ++i) {
 			for (int j = 0; j < n; ++j) {
 				if (grid[i][j] == 1) {
 					++numBuilding;
-					bfs(grid, i, j, dist, nums);
+					bfs(grid, dirs, i, j, dist, nums);
 				}
 			}
 		}
@@ -48,7 +51,7 @@ public:
 		int res = INT_MAX;
 		for (int i = 0; i < m; ++i) {
 			for (int j = 0; j < n; ++j) {
-				if (grid[i][j] == 0 && dist[i][j] != 0 && nums[i][j] == numBuilding)
+				if (grid[i][j] == 0 && dist[i][j] != 0 && nums[i][j] == numBuilding)	// [i][j] must be (1) empty, (2) can reach all buildings
 					res = min(res, dist[i][j]);
 			}
 		}
@@ -56,8 +59,29 @@ public:
 		return res == INT_MAX ? -1 : res;
 	}
 
-	void bfs(vector<vector<int>>& grid, int i, int j, vector<vector<int>>& dist, vector<vector<int>>& nums) {
-
+	// BFS to add distances from single building [i][j], also count number of reachable buildings
+	void bfs(vector<vector<int>>& grid, vector<vector<int>>& dirs, int i, int j, vector<vector<int>>& dist, vector<vector<int>>& nums) {
+		int m = grid.size(), n = grid[0].size();
+		vector<vector<bool>> visited(m, vector<bool>(n, false));
+		queue<pair<int, int>> q; q.push({ i,j });
+		int level = 0;
+		while (!q.empty()) {
+			++level;
+			int length = q.size();
+			for (int k = 0; k < length; ++k) {
+				int a = q.front().first, b = q.front().second;
+				q.pop();
+				for (auto& dir : dirs) {
+					int x = a + dir[0], y = b + dir[1];
+					if (x > -1 && x < m && y > -1 && y < n && grid[x][y] == 0 && !visited[x][y]) {
+						dist[x][y] += level;
+						++nums[x][y];
+						visited[x][y] = true;
+						q.push({ x, y });
+					}
+				}
+			}
+		}
 	}
 
 	// https://www.cnblogs.com/grandyang/p/5297683.html
@@ -96,7 +120,7 @@ public:
 int main() {
 	vector<vector<int>> grid{ {1,0,2,0,1},{0,0,0,0,0},{0,0,1,0,0} };
 	Solution obj;
-	cout << obj.shortestDistance2(grid) << endl;
+	cout << obj.shortestDistance(grid) << endl;
 	cin.get();
 	return 0;
 }

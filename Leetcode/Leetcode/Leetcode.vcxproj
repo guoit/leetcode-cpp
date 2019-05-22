@@ -165,6 +165,7 @@
     <ClCompile Include="0305NumberOfIslandsII.cpp" />
     <ClCompile Include="0317ShortestDistanceFromAllBuildings.cpp" />
     <ClCompile Include="0324WiggleSortII.cpp" />
+    <ClCompile Include="0327CountOfRangeSum.cpp" />
     <ClCompile Include="0340LongestSubstringWithAtMostKDistinctCharacters.cpp" />
     <ClCompile Include="0490TheMaze.cpp" />
     <ClCompile Include="0505TheMazeII.cpp" />

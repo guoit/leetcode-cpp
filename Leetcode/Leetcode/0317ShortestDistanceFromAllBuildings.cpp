@@ -117,10 +117,10 @@ public:
 	}
 };
 
-int main() {
-	vector<vector<int>> grid{ {1,0,2,0,1},{0,0,0,0,0},{0,0,1,0,0} };
-	Solution obj;
-	cout << obj.shortestDistance(grid) << endl;
-	cin.get();
-	return 0;
-}
+//int main() {
+//	vector<vector<int>> grid{ {1,0,2,0,1},{0,0,0,0,0},{0,0,1,0,0} };
+//	Solution obj;
+//	cout << obj.shortestDistance(grid) << endl;
+//	cin.get();
+//	return 0;
+//}

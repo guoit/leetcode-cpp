@@ -167,6 +167,7 @@
     <ClCompile Include="0324WiggleSortII.cpp" />
     <ClCompile Include="0327CountOfRangeSum.cpp" />
     <ClCompile Include="0340LongestSubstringWithAtMostKDistinctCharacters.cpp" />
+    <ClCompile Include="0346MovingAverageFromDataStream.cpp" />
     <ClCompile Include="0490TheMaze.cpp" />
     <ClCompile Include="0505TheMazeII.cpp" />
     <ClCompile Include="0715RangeModule.cpp" />
@@ -187,6 +188,7 @@
     <ClCompile Include="amazon_MaximumMinimumPathcpp.cpp" />
     <ClCompile Include="amazon_SubtreeWithMaximumAverage.cpp" />
     <ClCompile Include="amzon_KNearestPoints.cpp" />
+    <ClCompile Include="multithread_producer_consumer.cpp" />
     <ClCompile Include="twosigma_Substrings.cpp" />
   </ItemGroup>
   <ItemGroup>

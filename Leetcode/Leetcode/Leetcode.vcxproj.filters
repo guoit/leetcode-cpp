@@ -234,6 +234,12 @@
     <ClCompile Include="0327CountOfRangeSum.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="multithread_producer_consumer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0346MovingAverageFromDataStream.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="utilities.h">

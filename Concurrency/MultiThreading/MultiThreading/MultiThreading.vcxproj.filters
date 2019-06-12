@@ -18,5 +18,11 @@
     <ClCompile Include="example1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ThreadSafeQueue.h">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProducerConsumer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

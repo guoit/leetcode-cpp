@@ -117,6 +117,7 @@
   <ItemGroup>
     <ClCompile Include="example1.cpp" />
     <ClCompile Include="ProducerConsumer.cpp" />
+    <ClCompile Include="semaphores.cpp" />
     <ClCompile Include="ThreadSafeQueue.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

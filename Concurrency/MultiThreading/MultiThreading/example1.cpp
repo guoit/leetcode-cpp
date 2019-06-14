@@ -38,21 +38,21 @@ auto fn3 = [] {
 	}
 };
 
-int main()
-{
-	cout << "Main starts";
-	thread t1(thread_function);
-
-	auto fn2 = DisplayThread();
-	thread t2(fn2);
-	// or use below
-	// thread t2((DisplayThread()));
-
-	thread t3(fn3);
-	t1.join(); 
-	t2.join();
-	t3.join();
-	cout << "Exit of Main function" << endl;
-	cin.get();
-	return 0;
-}
+//int main()
+//{
+//	cout << "Main starts";
+//	thread t1(thread_function);
+//
+//	auto fn2 = DisplayThread();
+//	thread t2(fn2);
+//	// or use below
+//	// thread t2((DisplayThread()));
+//
+//	thread t3(fn3);
+//	t1.join(); 
+//	t2.join();
+//	t3.join();
+//	cout << "Exit of Main function" << endl;
+//	cin.get();
+//	return 0;
+//}

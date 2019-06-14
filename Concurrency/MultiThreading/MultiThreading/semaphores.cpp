@@ -11,7 +11,7 @@ int current = 0;
 
 void print_num(int num, int max) {
 	std::unique_lock<std::mutex> lck(mtx);
-	cv.wait(lck, [&num]() {return num == current && ready; });
+	cv.wait(lck, [&num]() {return num == current && ready; });	// semaphore logic
 
 	current++;
 	std::cout << "Thread: ";
@@ -30,24 +30,24 @@ void run() {
 	cv.notify_all();
 }
 
-int main() {
-	int threadnum = 15;
-	std::thread threads[15];
-
-	for (int id = 0; id < threadnum; ++id) {
-		threads[id] = std::thread(print_num, id, threadnum);
-	}
-
-	std::cout << "\nRunning " << threadnum;
-	std::cout << " in parallel: \n" << std::endl;
-
-	run();
-
-	for (int id = 0; id < threadnum; ++id) {
-		threads[id].join();
-	}
-
-	std::cout << "\nCompleted semaphore example!\n" << std::endl;
-	std::cin.get();
-	return 0;
-}
+//int main() {
+//	int threadnum = 15;
+//	std::thread threads[15];
+//
+//	for (int id = 0; id < threadnum; ++id) {
+//		threads[id] = std::thread(print_num, id, threadnum);
+//	}
+//
+//	std::cout << "\nRunning " << threadnum;
+//	std::cout << " in parallel: \n" << std::endl;
+//
+//	run();
+//
+//	for (int id = 0; id < threadnum; ++id) {
+//		threads[id].join();
+//	}
+//
+//	std::cout << "\nCompleted semaphore example!\n" << std::endl;
+//	std::cin.get();
+//	return 0;
+//}

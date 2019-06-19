@@ -168,6 +168,7 @@
     <ClCompile Include="0327CountOfRangeSum.cpp" />
     <ClCompile Include="0340LongestSubstringWithAtMostKDistinctCharacters.cpp" />
     <ClCompile Include="0346MovingAverageFromDataStream.cpp" />
+    <ClCompile Include="0480SlidingWindowMedian.cpp" />
     <ClCompile Include="0490TheMaze.cpp" />
     <ClCompile Include="0505TheMazeII.cpp" />
     <ClCompile Include="0715RangeModule.cpp" />

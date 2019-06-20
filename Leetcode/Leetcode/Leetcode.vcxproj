@@ -181,16 +181,6 @@
     <ClCompile Include="0855ExamRoom.cpp" />
     <ClCompile Include="0870AdvantageShuffle.cpp" />
     <ClCompile Include="0981TimeBasedKeyValueStore.cpp" />
-    <ClCompile Include="amazon_ClosestTwoSum.cpp" />
-    <ClCompile Include="amazon_ConnectingAllCities_MinSpanningTree.cpp" />
-    <ClCompile Include="amazon_Flight.cpp" />
-    <ClCompile Include="amazon_HighestFive.cpp" />
-    <ClCompile Include="amazon_KMinimumDistances.cpp" />
-    <ClCompile Include="amazon_MaximumMinimumPathcpp.cpp" />
-    <ClCompile Include="amazon_SubtreeWithMaximumAverage.cpp" />
-    <ClCompile Include="amzon_KNearestPoints.cpp" />
-    <ClCompile Include="multithread_producer_consumer.cpp" />
-    <ClCompile Include="twosigma_Substrings.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="utilities.h" />

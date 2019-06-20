@@ -93,34 +93,10 @@
     <ClCompile Include="0340LongestSubstringWithAtMostKDistinctCharacters.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="amazon_MaximumMinimumPathcpp.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="amazon_SubtreeWithMaximumAverage.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="amazon_KMinimumDistances.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="amzon_KNearestPoints.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="amazon_Flight.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="0490TheMaze.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="0505TheMazeII.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="amazon_ConnectingAllCities_MinSpanningTree.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="amazon_ClosestTwoSum.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="amazon_HighestFive.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="0243ShortestWordDistance.cpp">
@@ -169,9 +145,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="0261GraphValidTree.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="twosigma_Substrings.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="0265PaintHouseII.cpp">
@@ -232,9 +205,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="0327CountOfRangeSum.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="multithread_producer_consumer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="0346MovingAverageFromDataStream.cpp">

@@ -34,18 +34,19 @@ public:
 	// https://www.cnblogs.com/grandyang/p/6620334.html
 	vector<double> medianSlidingWindow(vector<int>& nums, int k) {
 		vector<double> res;
-		multiset<int> ms(nums.begin(), nums.begin() + k) ;
-		auto mid = next(ms.begin(), k/2);
+		multiset<int> ms(nums.begin(), nums.begin() + k);
+		auto mid = next(ms.begin(), k / 2);
 		for (int i = k; i <= nums.size(); ++i) {
 			// add median to res
-			res.push_back((*mid + *prev(mid, 1 - k % 2)) / 2.0);
+			res.push_back(((double)*mid + (double)*prev(mid, 1 - k % 2)) / 2.0);
 			// check if i is at the end
-			if (i == nums.size())	return res;
+			if (i == nums.size())	break;
 			// insert new number to multiset
 			ms.insert(nums[i]);
 			if (nums[i] < *mid)	--mid;
 			if (nums[i - k] <= *mid) ++mid;
 			ms.erase(ms.lower_bound(nums[i - k]));
 		}
+		return res;
 	}
 };

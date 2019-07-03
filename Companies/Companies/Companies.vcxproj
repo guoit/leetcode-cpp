@@ -125,6 +125,9 @@
     <ClCompile Include="amzon_KNearestPoints.cpp" />
     <ClCompile Include="twosigma_Substrings.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="utilities.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

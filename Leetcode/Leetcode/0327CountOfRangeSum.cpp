@@ -21,11 +21,11 @@ class Solution {
 public:
 	int countRangeSum(vector<int>& nums, int lower, int upper) {
 		multiset<long long> m;
-		m.insert(0);
+		m.insert(0); // Trick! This is for the case i doesn't exist in S(i, j)
 		long long sum = 0;
 		int res = 0;
-		for (int j = 0; j < nums.size(); ++j) {
-			sum += nums[j];
+		for (int num : nums) {
+			sum += num;
 			res += distance(m.lower_bound(sum - upper), m.upper_bound(sum - lower));
 			m.insert(sum);
 		}
@@ -35,11 +35,11 @@ public:
 
 };
 
-int main() {
-	vector<int> nums{-2, 5, -1};
-	int lower = -2, upper = 2;
-	Solution obj;
-	cout << obj.countRangeSum(nums, lower, upper)<<endl;
-	cin.get();
-	return 0;
-}
+//int main() {
+//	vector<int> nums{-2, 5, -1};
+//	int lower = -2, upper = 2;
+//	Solution obj;
+//	cout << obj.countRangeSum(nums, lower, upper)<<endl;
+//	cin.get();
+//	return 0;
+//}

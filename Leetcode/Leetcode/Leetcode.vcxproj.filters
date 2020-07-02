@@ -213,6 +213,12 @@
     <ClCompile Include="0480SlidingWindowMedian.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="0308RangeSumQuery2DMutable.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0493ReversePairs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="utilities.h">

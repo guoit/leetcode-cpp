@@ -116,8 +116,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="0005LongestPalindromicSubstring.cpp" />
+    <ClCompile Include="0023MergeKSortedLists.cpp" />
+    <ClCompile Include="0025ReverseNodeInKGroup.cpp" />
     <ClCompile Include="0034SearchForARange.cpp" />
+    <ClCompile Include="0085MaximalRectangle.cpp" />
     <ClCompile Include="0094BinaryTreeInorderTraversal.cpp" />
+    <ClCompile Include="0116PopulatingNextRightPointersInEachNode.cpp" />
+    <ClCompile Include="0124BinaryTreeMaxPathSum.cpp" />
     <ClCompile Include="0146LRUCache.cpp" />
     <ClCompile Include="0159LongestSubstringWithAtMostTwoDistinctCharacters.cpp" />
     <ClCompile Include="0179LargestNumber.cpp" />
@@ -131,6 +136,7 @@
     <ClCompile Include="0220ContainsDuplicateIII.cpp" />
     <ClCompile Include="0224BasicCalculator.cpp" />
     <ClCompile Include="0227BasicCalculatorII.cpp" />
+    <ClCompile Include="0236LowestCommonAncestorOfBinaryTree.cpp" />
     <ClCompile Include="0243ShortestWordDistance.cpp" />
     <ClCompile Include="0244ShortestWordDistanceII.cpp" />
     <ClCompile Include="0245ShortestWordDistanceIII.cpp" />
@@ -155,34 +161,48 @@
     <ClCompile Include="0281ZigzagIterator.cpp" />
     <ClCompile Include="0285InorderSuccessorInBST.cpp" />
     <ClCompile Include="0286WallsAndGates.cpp" />
+    <ClCompile Include="0287FindDuplicateNumber.cpp" />
     <ClCompile Include="0288UniqueWordAbreviation.cpp" />
     <ClCompile Include="0291WordPatternII.cpp" />
     <ClCompile Include="0293FlipGame.cpp" />
     <ClCompile Include="0294FlipGameII.cpp" />
     <ClCompile Include="0296BestMeetingPoint.cpp" />
+    <ClCompile Include="0297SerializeAndDeserializeBinaryTree.cpp" />
     <ClCompile Include="0298BinaryTreeLongestConsecutiveSequence.cpp" />
     <ClCompile Include="0302SmallestRectangleEnclosingBlackPixels.cpp" />
     <ClCompile Include="0305NumberOfIslandsII.cpp" />
     <ClCompile Include="0308RangeSumQuery2DMutable.cpp" />
+    <ClCompile Include="0315CountOfSmallerNumberAfterSelf.cpp" />
     <ClCompile Include="0317ShortestDistanceFromAllBuildings.cpp" />
     <ClCompile Include="0324WiggleSortII.cpp" />
     <ClCompile Include="0327CountOfRangeSum.cpp" />
     <ClCompile Include="0340LongestSubstringWithAtMostKDistinctCharacters.cpp" />
     <ClCompile Include="0346MovingAverageFromDataStream.cpp" />
+    <ClCompile Include="0347TopKFrequentElements.cpp" />
+    <ClCompile Include="0428SerializeAndDeserializeNaryTree.cpp" />
+    <ClCompile Include="0460LFUCache.cpp" />
     <ClCompile Include="0480SlidingWindowMedian.cpp" />
     <ClCompile Include="0490TheMaze.cpp" />
     <ClCompile Include="0493ReversePairs.cpp" />
     <ClCompile Include="0505TheMazeII.cpp" />
     <ClCompile Include="0715RangeModule.cpp" />
+    <ClCompile Include="0716MaxStack.cpp" />
     <ClCompile Include="0729MyCalendarI.cpp" />
     <ClCompile Include="0731MyCalendarII.cpp" />
     <ClCompile Include="0732MyCalendarIII.cpp" />
     <ClCompile Include="0741CherryPickup.cpp" />
     <ClCompile Include="0786KthSmallestPrimeFraction.cpp" />
     <ClCompile Include="0819MostCommonWord.cpp" />
+    <ClCompile Include="0828CountUniqueCharactersOfAllSubstringsOfAGivenString.cpp" />
     <ClCompile Include="0855ExamRoom.cpp" />
     <ClCompile Include="0870AdvantageShuffle.cpp" />
+    <ClCompile Include="0980UniquePathsIII.cpp" />
     <ClCompile Include="0981TimeBasedKeyValueStore.cpp" />
+    <ClCompile Include="1156SwapForLongestRepeatedCharacterSubstring.cpp" />
+    <ClCompile Include="1209RemoveAllAdjacentDuplicatesInStringII.cpp" />
+    <ClCompile Include="1236WebCrawler.cpp" />
+    <ClCompile Include="1239MaxLengthOfConcatenatedStringWithUniqueCharacters.cpp" />
+    <ClCompile Include="1246PalindromeRemoval.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="utilities.h" />

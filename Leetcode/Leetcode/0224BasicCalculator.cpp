@@ -27,6 +27,7 @@ Do not use the eval built-in library function.
 using namespace std;
 class Solution {
 public:
+	// stack solution
 	int calculate(string s) {
 		int n = s.size();
 		stack<long> st;
@@ -69,7 +70,7 @@ public:
 //	//string s = "-1";
 //	string s = "100-(-(2-34)+6 -(9))";
 //	//string s = "";
-//	cout << obj.calculate(s) << endl;
+//	cout << obj.calculate(s) << " expect 71" << endl;
 //
 //	cin.get();
 //	return 0;

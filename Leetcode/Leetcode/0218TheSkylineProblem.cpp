@@ -41,12 +41,8 @@ public:
 
 		int pre = 0, cur = 0;
 		for (auto &a : b) {
-			if (a.second < 0) {
-				h.insert(-a.second);
-			}
-			else {
-				h.erase(h.find(a.second));
-			}
+			if (a.second < 0) h.insert(-a.second);
+			else h.erase(h.find(a.second));
 			cur = *h.rbegin();
 			if (pre != cur) {
 				res.push_back(make_pair(a.first, cur));

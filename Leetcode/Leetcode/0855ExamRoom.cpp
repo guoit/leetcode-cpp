@@ -45,23 +45,19 @@ public:
 	}
 
 	int seat() {
-		if (sit.empty()) {
-			sit.insert(0);
+		if (m.empty()) {
+			m.insert(0);
 			return 0;
 		}
 		
-		int dist = 0, res = 0;	// max distance, and result seat
-
-		auto it = sit.begin();
+		auto it = m.begin();
 		// if the first seat is not 0, calculate max distance and result seat
-		if (*it != 0) {
-			res = 0;	// sit in 0
-			dist = *it;	// max distance is (*it - 0)
-		}
+
+		int res = 0;	// candidate seat
+		int	dist = *it;	// max distance is (*it - 0)
 		
-		++it;
 		// iterate all seats and update max distance and result seat
-		for (; it != sit.end(); ++it) {
+		for (++it; it != m.end(); ++it) {
 			auto pre = prev(it);
 			int mid = (*pre + *it) / 2;
 			if (mid - *pre > dist) {	// bug fixed: should check the first half distance, not the second half
@@ -70,24 +66,21 @@ public:
 			}
 		}
 
-		// if the last seat is not N - 1, calculate max distance and result seat
-		if (*prev(it) != SEAT_LIMIT - 1) {
-			auto pre = prev(it);
-			if (SEAT_LIMIT - 1 - *pre > dist) {
-				res = SEAT_LIMIT - 1;
-			}
+		// if sitting on the last seat has max distance, then use the last seat
+		if (SEAT_LIMIT - 1 - *m.rbegin() > dist) {
+			res = SEAT_LIMIT - 1;
 		}
 
-		sit.insert(res);	// bug fixed: forgot to insert res into set
+		m.insert(res);	// bug fixed: forgot to insert res into set
 		return res;
 	}
 
 	void leave(int p) {
-		sit.erase(p);
+		m.erase(p);
 	}
 
 private:
-	set<int> sit;
+	set<int> m;
 	int SEAT_LIMIT;
 };
 

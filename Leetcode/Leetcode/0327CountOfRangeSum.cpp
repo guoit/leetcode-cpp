@@ -21,7 +21,7 @@ class Solution {
 public:
 	int countRangeSum(vector<int>& nums, int lower, int upper) {
 		multiset<long long> m;
-		m.insert(0); // Trick! This is for the case i doesn't exist in S(i, j)
+		m.insert(0); // Trick! This is for the accumulation sum up to current num
 		long long sum = 0;
 		int res = 0;
 		for (int num : nums) {

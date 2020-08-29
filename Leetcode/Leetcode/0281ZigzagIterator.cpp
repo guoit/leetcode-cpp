@@ -31,7 +31,7 @@ public:
 		cur = 0;
 	}
 	int next() {
-		int value = *it[cur];	// get current value
+		int value = *it[cur];	// get current value. BUG HERE! Think v1 = {}, v2= {1}
 		++it[cur];	// advance current iterator
 		cur ^= 1;	// switch to another iterator
 		if (it[cur] == end[cur]) {	// if another iterator reaches end, switch iterator back

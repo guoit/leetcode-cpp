@@ -33,7 +33,7 @@ public:
 			if (i - j > k)	m.erase(nums[j++]);	// don't worry there could be a duplicated element being erased between j and i, because if that duplicate exists, previously function already returns true.
 			auto it = m.lower_bound((long)nums[i] - t);
 			if ((it != m.end()) && (it->first <= nums[i] + t))	return true;
-			m[nums[i]] = j;
+			m[nums[i]] = i;
 		}
 
 		return false;

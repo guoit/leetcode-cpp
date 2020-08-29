@@ -33,16 +33,7 @@ class Solution {
 public:
 	vector<int> advantageCount(vector<int>& A, vector<int>& B) {
 		map<int, int> remains;
-		for (int num : A) {
-			auto it = remains.find(num);
-			if (it != remains.end()) {
-				it->second++;
-			}
-			else {
-				remains[num] = 1;
-			}
-		}
-		//cout<<remains<<endl;
+		for (int num : A) ++remains[num];
 
 		vector<int> res;
 		for (int num : B) {

@@ -69,10 +69,10 @@ public:
 	}
 };
 
-int main() {
-	Solution obj;
-	vector<int> nums{ 3, 1 };
-	cout << obj.reversePairs(nums) << endl;
-	cin.get();
-	return 0;
-}
+//int main() {
+//	Solution obj;
+//	vector<int> nums{ 3, 1 };
+//	cout << obj.reversePairs(nums) << endl;
+//	cin.get();
+//	return 0;
+//}
